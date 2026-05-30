@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tin tức — Tossful</title>
+  <meta name="description" content="Tin tức Tossful — khuyến mãi, sự kiện, thông báo và những câu chuyện mới nhất.">
+  <link rel="icon" href="images/logo-mark-green.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,300;1,9..144,400&family=Questrial&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html"><img src="images/logo-lockup-white.svg" alt="Tossful"></a>
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html"><span lang="vi">Trang chủ</span><span lang="en">Home</span></a>
+        <a href="about.html"><span lang="vi">Về Tossful</span><span lang="en">About</span></a>
+        <a href="menu.html"><span lang="vi">Thực đơn</span><span lang="en">Menu</span></a>
+        <a href="calculator/index.html?src=brand-site" class="is-highlight">
+          <span lang="vi">Tính Calo</span><span lang="en">Calculator</span>
+          <span class="nav-badge"><span lang="vi">MỚI</span><span lang="en">NEW</span></span>
+        </a>
+        <a href="news.html" class="is-active"><span lang="vi">Tin tức</span><span lang="en">News</span></a>
+        <a href="careers.html"><span lang="vi">Tuyển dụng</span><span lang="en">Careers</span></a>
+      </nav>
+      <div class="site-header__right">
+        <a class="btn btn-pink" href="https://beacons.ai/tossful" target="_blank" rel="noopener"><span lang="vi">Đặt hàng</span><span lang="en">Order</span></a>
+        <button class="lang-switch" data-lang-toggle aria-label="Đổi ngôn ngữ / Change language">
+          🌐 <span data-lang-label>VI</span>
+        </button>
+        <button class="menu-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Mở menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== FEATURED STORY BANNER ===== -->
+    <section class="news-feature">
+      <div class="news-feature__media">
+        <img src="images/marketing/news-hero.jpg" alt="Vietnam International Half Marathon 2025" loading="lazy">
+      </div>
+      <div class="news-feature__copy">
+        <span class="news-feature__tag"><span lang="vi">SỰ KIỆN</span><span lang="en">EVENT</span></span>
+        <h1 class="news-feature__title">
+          <span lang="vi">Tossful hân hạnh là nhà tài trợ ẩm thực tại Vietnam International Half Marathon 2025</span>
+          <span lang="en">Tossful is proud to be the official food sponsor at the Vietnam International Half Marathon 2025</span>
+        </h1>
+        <p class="news-feature__body">
+          <span lang="vi">Tossful tự hào trở thành đối tác dinh dưỡng đồng hành cùng giải chạy, mang đến những bowl tươi đầy năng lượng cho hàng nghìn vận động viên về đích.</span>
+          <span lang="en">We're proud to fuel the runners — fresh, energy-packed bowls cheering thousands of athletes across the finish line.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== ARTICLE LIST ===== -->
+    <section style="padding-top:0;">
+      <div class="container">
+
+        <div class="news-toolbar">
+          <div class="news-tabs tabs" data-tabs>
+            <button class="news-tab" data-tab-group="news" data-tab-target="all"    aria-selected="true"><span lang="vi">Tất cả</span><span lang="en">All</span></button>
+            <button class="news-tab" data-tab-group="news" data-tab-target="promo"  aria-selected="false"><span lang="vi">Khuyến mãi</span><span lang="en">Promotions</span></button>
+            <button class="news-tab" data-tab-group="news" data-tab-target="event"  aria-selected="false"><span lang="vi">Sự kiện</span><span lang="en">Events</span></button>
+            <button class="news-tab" data-tab-group="news" data-tab-target="notice" aria-selected="false"><span lang="vi">Thông báo</span><span lang="en">Announcements</span></button>
+          </div>
+          <div class="news-search">
+            <input type="search" placeholder="Tìm bài viết..." aria-label="Tìm bài viết">
+          </div>
+        </div>
+
+        <div class="news-grid">
+
+          <article class="news-card">
+            <div class="news-card__media"><img src="images/marketing/news-hero.jpg" alt="" loading="lazy"></div>
+            <div class="news-card__meta">
+              <span class="news-card__tag news-card__tag--event">SỰ KIỆN</span>
+              <span class="news-card__date">07/04/2025</span>
+            </div>
+            <h3 class="news-card__title">
+              <span lang="vi">Tossful đồng hành cùng Vietnam International Half Marathon 2025</span>
+              <span lang="en">Tossful at the Vietnam International Half Marathon 2025</span>
+            </h3>
+            <p class="news-card__excerpt">
+              <span lang="vi">Chia sẻ hành trình tiếp sức của Tossful tại giải chạy quy mô lớn nhất nước Hồ Tây.</span>
+              <span lang="en">Inside Tossful's nutrition partnership at Hà Nội's biggest half marathon.</span>
+            </p>
+            <a class="news-card__link" href="#"><span lang="vi">Đọc thêm →</span><span lang="en">Read more →</span></a>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__media"><img src="images/bowls/bowl-kale-my-ex.jpg" alt="" loading="lazy"></div>
+            <div class="news-card__meta">
+              <span class="news-card__tag news-card__tag--promo">KHUYẾN MÃI</span>
+              <span class="news-card__date">15/05/2026</span>
+            </div>
+            <h3 class="news-card__title">
+              <span lang="vi">Đăng ký thành viên — off 100K cho đơn online đầu tiên</span>
+              <span lang="en">Sign up: 100K off your first online order + free drink</span>
+            </h3>
+            <p class="news-card__excerpt">
+              <span lang="vi">Áp dụng đến hết tháng 5 cho mọi đơn qua beacons.ai/tossful.</span>
+              <span lang="en">Through May, every first order on beacons.ai/tossful.</span>
+            </p>
+            <a class="news-card__link" href="#"><span lang="vi">Đọc thêm →</span><span lang="en">Read more →</span></a>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__media"><img src="images/marketing/home-extra-1.jpg" alt="" loading="lazy"></div>
+            <div class="news-card__meta">
+              <span class="news-card__tag news-card__tag--notice">THÔNG BÁO</span>
+              <span class="news-card__date">28/04/2026</span>
+            </div>
+            <h3 class="news-card__title">
+              <span lang="vi">Tossful Metropole Thủ Thiêm chính thức khai trương</span>
+              <span lang="en">Tossful Metropole Thủ Thiêm is officially open</span>
+            </h3>
+            <p class="news-card__excerpt">
+              <span lang="vi">Ưu đãi 20% toàn menu tuần đầu tiên — chỉ tại cơ sở HCMC.</span>
+              <span lang="en">20% off the entire menu for opening week — HCMC store only.</span>
+            </p>
+            <a class="news-card__link" href="#"><span lang="vi">Đọc thêm →</span><span lang="en">Read more →</span></a>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__media"><img src="images/bowls/bowl-shroomami.jpg" alt="" loading="lazy"></div>
+            <div class="news-card__meta">
+              <span class="news-card__tag news-card__tag--event">SỰ KIỆN</span>
+              <span class="news-card__date">20/03/2026</span>
+            </div>
+            <h3 class="news-card__title">
+              <span lang="vi">Tossful x Phan Coffee — Tuần lễ Cold Brew Măng Đen</span>
+              <span lang="en">Tossful × Phan Coffee — Măng Đen Cold Brew Week</span>
+            </h3>
+            <p class="news-card__excerpt">
+              <span lang="vi">Cold brew giới hạn pha từ hạt Măng Đen — chỉ trong 5 ngày tại Hà Nội.</span>
+              <span lang="en">A limited cold brew from Măng Đen beans — 5 days, Hà Nội only.</span>
+            </p>
+            <a class="news-card__link" href="#"><span lang="vi">Đọc thêm →</span><span lang="en">Read more →</span></a>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__media"><img src="images/ingredients/kales.jpg" alt="" loading="lazy"></div>
+            <div class="news-card__meta">
+              <span class="news-card__tag news-card__tag--notice">THÔNG BÁO</span>
+              <span class="news-card__date">01/03/2026</span>
+            </div>
+            <h3 class="news-card__title">
+              <span lang="vi">Lịch nghỉ lễ 30/4 — 1/5</span>
+              <span lang="en">Holiday hours: April 30 – May 1</span>
+            </h3>
+            <p class="news-card__excerpt">
+              <span lang="vi">Cả hai cửa hàng nghỉ 30/4 và 1/5, mở lại bình thường từ 2/5.</span>
+              <span lang="en">Both stores closed Apr 30 – May 1, back to normal on May 2.</span>
+            </p>
+            <a class="news-card__link" href="#"><span lang="vi">Đọc thêm →</span><span lang="en">Read more →</span></a>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__media"><img src="images/bowls/bowl-fennel-fling.jpg" alt="" loading="lazy"></div>
+            <div class="news-card__meta">
+              <span class="news-card__tag news-card__tag--promo">KHUYẾN MÃI</span>
+              <span class="news-card__date">12/02/2026</span>
+            </div>
+            <h3 class="news-card__title">
+              <span lang="vi">Combo trưa văn phòng — giảm 15% khi đặt theo team</span>
+              <span lang="en">Office lunch combo — 15% off team orders</span>
+            </h3>
+            <p class="news-card__excerpt">
+              <span lang="vi">Đặt từ 5 phần trở lên qua Zalo Tossful, áp dụng từ T2 đến T6.</span>
+              <span lang="en">Five-bowl minimum via Zalo, Monday – Friday.</span>
+            </p>
+            <a class="news-card__link" href="#"><span lang="vi">Đọc thêm →</span><span lang="en">Read more →</span></a>
+          </article>
+
+        </div>
+
+        <div class="pagination">
+          <button class="pagination__btn is-active" aria-label="Page 1">1</button>
+          <button class="pagination__btn" aria-label="Page 2">2</button>
+          <button class="pagination__btn" aria-label="Page 3">3</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-brand__lockup"><img src="images/logo-lockup-white.svg" alt="Tossful — A Bowl for Everyone"></span>
+        </div>
+        <div class="footer-col">
+          <h4><span lang="vi">Liên hệ với Tossful qua:</span><span lang="en">Get in touch with Tossful:</span></h4>
+          <div class="footer-contact">
+            <div>📧 <a href="mailto:tossful@gmail.com">tossful@gmail.com</a></div>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/tossful" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+            <a href="https://www.instagram.com/tossful_" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4><span lang="vi">Cửa hàng Tossful:</span><span lang="en">Tossful stores:</span></h4>
+          <div class="footer-stores">
+            <div class="footer-store">
+              <span class="footer-store__pill">CN Hà Nội</span>
+              <div>B1, Tòa nhà Capital Place,<br>29 Liễu Giai, Ba Đình, Hà Nội</div>
+            </div>
+            <div class="footer-store">
+              <span class="footer-store__pill footer-store__pill--hcm">CN TP.HCM</span>
+              <div>Metropole Thủ Thiêm – QPH7+H8V,<br>Đ. D6, Thủ Thiêm, Thủ Đức, TP.HCM</div>
+            </div>
+            <div class="footer-hours">
+              <span lang="vi"><strong>Giờ mở cửa:</strong> 10:00 – 20:30</span>
+              <span lang="en"><strong>Opening hours:</strong> 10:00 – 20:30</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Công ty TNHH TOSSFUL · MST 0111016936</span>
+        <span><em>A Bowl for Everyone.</em></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

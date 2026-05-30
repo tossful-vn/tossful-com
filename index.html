@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tossful — A Bowl for Everyone</title>
+  <meta name="description" content="Tossful — salad bar Việt Nam. Healthy fast food, vị quốc tế, nguyên liệu địa phương. Hà Nội + HCMC.">
+  <link rel="icon" href="images/logo-mark-green.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,300;1,9..144,400&family=Questrial&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER (DUPLICATE ACROSS PAGES) ===== -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">
+        <img src="images/logo-lockup-white.svg" alt="Tossful">
+      </a>
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html"   class="is-active"><span lang="vi">Trang chủ</span><span lang="en">Home</span></a>
+        <a href="about.html"  ><span lang="vi">Về Tossful</span><span lang="en">About</span></a>
+        <a href="menu.html"   ><span lang="vi">Thực đơn</span><span lang="en">Menu</span></a>
+        <a href="calculator/index.html?src=brand-site" class="is-highlight">
+          <span lang="vi">Tính Calo</span><span lang="en">Calculator</span>
+          <span class="nav-badge"><span lang="vi">MỚI</span><span lang="en">NEW</span></span>
+        </a>
+        <a href="news.html"   ><span lang="vi">Tin tức</span><span lang="en">News</span></a>
+        <a href="careers.html"><span lang="vi">Tuyển dụng</span><span lang="en">Careers</span></a>
+      </nav>
+      <div class="site-header__right">
+        <a class="btn btn-pink" href="https://beacons.ai/tossful" target="_blank" rel="noopener"><span lang="vi">Đặt hàng</span><span lang="en">Order</span></a>
+        <button class="lang-switch" data-lang-toggle aria-label="Đổi ngôn ngữ / Change language">
+          🌐 <span data-lang-label>VI</span>
+        </button>
+        <button class="menu-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Mở menu">☰</button>
+      </div>
+    </div>
+  </header>
+  <!-- ===== /HEADER ===== -->
+
+  <!-- Announcement marquee -->
+  <div class="announce" aria-hidden="false">
+    <div class="announce__track">
+      <span><span lang="vi">Đăng ký thành viên off 100K & free 01 nước</span><span lang="en">Sign up — 100K off + free drink on us</span></span>
+      <span><span lang="vi">New Store Opening – Metropole Thủ Thiêm</span><span lang="en">New Store Opening – Metropole Thủ Thiêm</span></span>
+      <span><span lang="vi">20% Off đến hết 30/4</span><span lang="en">20% Off Until Apr 30</span></span>
+      <span><span lang="vi">Giao hàng nội thành nhanh trong 45 phút</span><span lang="en">Inner-city delivery in 45 minutes</span></span>
+      <!-- duplicated for seamless loop -->
+      <span><span lang="vi">Đăng ký thành viên off 100K & free 01 nước</span><span lang="en">Sign up — 100K off + free drink on us</span></span>
+      <span><span lang="vi">New Store Opening – Metropole Thủ Thiêm</span><span lang="en">New Store Opening – Metropole Thủ Thiêm</span></span>
+      <span><span lang="vi">20% Off đến hết 30/4</span><span lang="en">20% Off Until Apr 30</span></span>
+      <span><span lang="vi">Giao hàng nội thành nhanh trong 45 phút</span><span lang="en">Inner-city delivery in 45 minutes</span></span>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" data-carousel>
+      <div class="hero__bg">
+        <img src="images/hero/hero-1.jpg" alt="" class="is-active" data-slide="0">
+        <img src="images/hero/hero-2.jpg" alt="" data-slide="1">
+        <img src="images/hero/hero-3.jpg" alt="" data-slide="2">
+      </div>
+
+      <div class="hero__inner">
+        <div>
+          <span class="hero__eyebrow"><span lang="vi">DỊCH VỤ CỦA TOSSFUL</span><span lang="en">TOSSFUL SERVICES</span></span>
+          <div class="hero__services">
+
+            <div class="hero__service">
+              <span class="hero__service-title"><span lang="vi">Ăn tại chỗ</span><span lang="en">Dine in</span></span>
+              <p class="hero__service-text">
+                <span lang="vi">Nạp năng lượng tức thì với trải nghiệm healthy fast food ngay tại cửa hàng Tossful.</span>
+                <span lang="en">Recharge with a healthy fast-food experience right at the Tossful counter.</span>
+                <a href="about.html">
+                  <span lang="vi">→ Ghé cửa hàng ngay</span>
+                  <span lang="en">→ Visit a store</span>
+                </a>
+              </p>
+            </div>
+
+            <div class="hero__service">
+              <span class="hero__service-title"><span lang="vi">Giao hàng</span><span lang="en">Delivery</span></span>
+              <p class="hero__service-text">
+                <span lang="vi">Combo ngon — nhanh — khỏe, sẵn sàng xuất phát để đồng hành cùng ngày bận rộn của bạn.</span>
+                <span lang="en">Good — fast — healthy combos, packed and ready to keep your busy day moving.</span>
+                <a href="https://beacons.ai/tossful" target="_blank" rel="noopener">
+                  <span lang="vi">→ Đặt món ngay</span>
+                  <span lang="en">→ Order now</span>
+                </a>
+              </p>
+            </div>
+
+            <div class="hero__service">
+              <span class="hero__service-title"><span lang="vi">Catering</span><span lang="en">Catering</span></span>
+              <p class="hero__service-text">
+                <span lang="vi">Giải pháp catering chuyên nghiệp, cân bằng và đầy dinh dưỡng dành cho doanh nghiệp.</span>
+                <span lang="en">Pro catering — balanced, nutritious meals built for offices and team events.</span>
+                <a href="https://zalo.me/2823151407077361665" target="_blank" rel="noopener">
+                  <span lang="vi">→ Tư vấn ngay</span>
+                  <span lang="en">→ Talk to us</span>
+                </a>
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="hero__tag">
+          <span lang="vi">Chúng tôi định nghĩa lại<br>healthy fastfood</span>
+          <span lang="en">We redefine<br>healthy fastfood</span>
+        </div>
+      </div>
+
+      <div class="hero__arrows" aria-hidden="true">
+        <button class="hero__arrow" data-carousel-prev aria-label="Trước">‹</button>
+        <button class="hero__arrow" data-carousel-next aria-label="Sau">›</button>
+      </div>
+      <div class="hero__dots" role="tablist" aria-label="Hero slides">
+        <button class="hero__dot is-active" data-carousel-dot="0" aria-label="Slide 1"></button>
+        <button class="hero__dot"           data-carousel-dot="1" aria-label="Slide 2"></button>
+        <button class="hero__dot"           data-carousel-dot="2" aria-label="Slide 3"></button>
+      </div>
+    </section>
+
+    <!-- ===== MENU PREVIEW ===== -->
+    <section class="menu-preview">
+      <div class="container">
+
+        <div class="tabs" data-tabs>
+          <div class="tab-headlines" role="tablist">
+            <button class="tab-headline" data-tab-group="main" data-tab-target="ansan"  aria-selected="true"><span lang="vi">Ăn sẵn</span>  <span lang="en">Ready to eat</span></button>
+            <button class="tab-headline" data-tab-group="main" data-tab-target="anuong" aria-selected="false"><span lang="vi">Ăn uống</span> <span lang="en">Drinks</span></button>
+            <button class="tab-headline" data-tab-group="main" data-tab-target="anchoi" aria-selected="false"><span lang="vi">Ăn chơi</span> <span lang="en">Snacks</span></button>
+          </div>
+
+          <div class="tab-panel is-active" data-tab-panel-group="main" data-tab-panel="ansan">
+            <div class="subtab-list" role="tablist">
+              <button class="subtab-btn" data-tab-group="ansan" data-tab-target="bowl" aria-selected="true">Bowl</button>
+              <button class="subtab-btn" data-tab-group="ansan" data-tab-target="wrap" aria-selected="false">Wrap</button>
+            </div>
+
+            <div class="tab-panel is-active" data-tab-panel-group="ansan" data-tab-panel="bowl">
+              <div class="bowls-grid">
+
+                <article class="bowl-card">
+                  <div class="bowl-card__media">
+                    <span class="bowl-card__tag">BEST SELLER</span>
+                    <img src="images/bowls/bowl-biet-dieu.jpg" alt="Biết Điều Bowl" loading="lazy">
+                  </div>
+                  <h3 class="bowl-card__title">Biết Điều</h3>
+                  <p class="bowl-card__desc">
+                    <span lang="vi">Cơm bông cải trắng, Cà chua bi, Đậu lăng xanh, Bắp cải muối, Bí đỏ & khoai lang nướng, Mix hạt nướng…</span>
+                    <span lang="en">Cauliflower rice, baby tomatoes, green lentils, pickled cabbage, roasted pumpkin & sweet potato, mixed roasted seeds…</span>
+                  </p>
+                  <p class="bowl-card__meta">488 Kcal · GF · DF</p>
+                  <a class="bowl-card__cta" href="https://beacons.ai/tossful" target="_blank" rel="noopener">
+                    <span lang="vi">Đặt hàng ngay</span><span lang="en">Order now</span>
+                  </a>
+                </article>
+
+                <article class="bowl-card">
+                  <div class="bowl-card__media">
+                    <span class="bowl-card__tag tag-chef">CHEF THẠCH TA · TA DINING</span>
+                    <img src="images/bowls/bowl-thai-me-up.jpg" alt="Thai Me Up Bowl" loading="lazy">
+                  </div>
+                  <h3 class="bowl-card__title">Thai Me Up</h3>
+                  <p class="bowl-card__desc">
+                    <span lang="vi">Cá diêu hồng, Cơm gạo lứt, Khoai lang nướng, Hành phi, Rau cải xoăn Kale, Salsa cà chua, Lê, Xốt Thái</span>
+                    <span lang="en">Pan-seared red tilapia, brown rice, roasted sweet potato, crispy shallots, kale, tomato salsa, pear, Thai dressing</span>
+                  </p>
+                  <p class="bowl-card__meta">--- Kcal · GF · DF</p>
+                  <a class="bowl-card__cta" href="https://beacons.ai/tossful" target="_blank" rel="noopener">
+                    <span lang="vi">Đặt hàng ngay</span><span lang="en">Order now</span>
+                  </a>
+                </article>
+
+                <article class="bowl-card">
+                  <div class="bowl-card__media">
+                    <span class="bowl-card__tag tag-vegan">VEGAN</span>
+                    <img src="images/bowls/bowl-shroomami.jpg" alt="Shroomami Bowl" loading="lazy">
+                  </div>
+                  <h3 class="bowl-card__title">Shroomami</h3>
+                  <p class="bowl-card__desc">
+                    <span lang="vi">Gạo lứt tam sắc, cá hồi Na Uy nướng miso, đậu nành Nhật, Rau cải xoăn Kale, củ dền nướng, súp lơ xanh nướng…</span>
+                    <span lang="en">Tri-color brown rice, miso-roasted mushrooms, edamame, kale, roasted beetroot & broccoli, sesame ginger dressing…</span>
+                  </p>
+                  <p class="bowl-card__meta">443 Kcal · V · DF</p>
+                  <a class="bowl-card__cta" href="https://beacons.ai/tossful" target="_blank" rel="noopener">
+                    <span lang="vi">Đặt hàng ngay</span><span lang="en">Order now</span>
+                  </a>
+                </article>
+
+              </div>
+            </div>
+
+            <div class="tab-panel" data-tab-panel-group="ansan" data-tab-panel="wrap">
+              <div class="bowls-grid">
+                <article class="bowl-card">
+                  <div class="bowl-card__media" style="display:flex;align-items:center;justify-content:center;font-style:italic;color:var(--toss-kale);opacity:0.6;">
+                    <span><span lang="vi">Wrap sắp ra mắt</span><span lang="en">Wraps coming soon</span></span>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" data-tab-panel-group="main" data-tab-panel="anuong">
+            <div class="bowls-grid">
+              <article class="bowl-card">
+                <div class="bowl-card__media" style="display:flex;align-items:center;justify-content:center;font-style:italic;color:var(--toss-kale);opacity:0.6;">
+                  <span><span lang="vi">Đồ uống — xem trang Menu</span><span lang="en">Drinks — see Menu page</span></span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="tab-panel" data-tab-panel-group="main" data-tab-panel="anchoi">
+            <div class="bowls-grid">
+              <article class="bowl-card">
+                <div class="bowl-card__media"><img src="images/sides/guacamole-chips.jpg" alt="Guacamole + Cassava Chips" loading="lazy"></div>
+                <h3 class="bowl-card__title">Guacamole + Cassava Chips</h3>
+                <p class="bowl-card__desc">
+                  <span lang="vi">Bơ nghiền với lime, ngò, ớt — chấm bánh khoai mì giòn rụm.</span>
+                  <span lang="en">Mashed avocado with lime, cilantro, chili — paired with crispy cassava chips.</span>
+                </p>
+                <p class="bowl-card__meta">65K</p>
+                <a class="bowl-card__cta" href="https://beacons.ai/tossful" target="_blank" rel="noopener">
+                  <span lang="vi">Đặt hàng ngay</span><span lang="en">Order now</span>
+                </a>
+              </article>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="menu-preview__cta">
+          <a class="btn btn-primary" href="menu.html">
+            <span lang="vi">Xem thực đơn</span><span lang="en">View full menu</span> &nbsp;→
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== REVIEWS (polaroid on pink) ===== -->
+    <section class="reviews">
+      <div class="container reviews__container">
+        <div class="reviews__lead">
+          <span class="badge"><span lang="vi">Tossful có ngon như lời đồn?</span><span lang="en">Is Tossful as good as they say?</span></span>
+          <h2>
+            <span lang="vi">Chia sẻ của<br>khách hàng<br>về Tossful!</span>
+            <span lang="en">What guests<br>are saying<br>about Tossful!</span>
+          </h2>
+        </div>
+
+        <div class="polaroid-grid">
+
+          <article class="polaroid">
+            <div class="polaroid__header">
+              <span class="polaroid__avatar">👤</span>
+              <span class="polaroid__name">David Miller</span>
+            </div>
+            <p>
+              <span lang="vi">"Love the vibe here. Fast service, friendly staff, and the homemade dressings are top-notch. Great spot to grab a healthy lunch while working on my laptop."</span>
+              <span lang="en">"Love the vibe here. Fast service, friendly staff, and the homemade dressings are top-notch. Great spot to grab a healthy lunch while working on my laptop."</span>
+            </p>
+            <p class="polaroid__date">11.9.2025</p>
+          </article>
+
+          <article class="polaroid">
+            <div class="polaroid__header">
+              <span class="polaroid__avatar">👤</span>
+              <span class="polaroid__name">Phạm Thuý Linh</span>
+            </div>
+            <p>
+              <span lang="vi">"Cả team mình đều nghiện Tossful. Order 20 phần cho buổi họp trưa mà quán giao rất đúng giờ, bao bì sạch sẽ và chuyên nghiệp. Quan trọng là ăn xong mọi người vẫn tỉnh táo để làm việc tiếp, không bị buồn ngủ."</span>
+              <span lang="en">"Our whole team is hooked on Tossful. Ordered 20 lunches for a meeting — delivered on time, clean professional packaging. Best part: nobody got that post-lunch slump."</span>
+            </p>
+            <p class="polaroid__date">4.1.2026</p>
+          </article>
+
+          <article class="polaroid">
+            <div class="polaroid__header">
+              <span class="polaroid__avatar">👤</span>
+              <span class="polaroid__name">Sarah Jenkins</span>
+            </div>
+            <p>
+              <span lang="vi">"Finally found a place in Hanoi that serves a proper Salad Bowl! The ingredients are incredibly fresh, and the Shroomami bowl reminds me so much of my favorite spots in NYC. 10/10 would recommend."</span>
+              <span lang="en">"Finally found a place in Hanoi that serves a proper Salad Bowl! The ingredients are incredibly fresh, and the Shroomami bowl reminds me so much of my favorite spots in NYC. 10/10 would recommend."</span>
+            </p>
+            <p class="polaroid__date">2.7.2025</p>
+          </article>
+
+          <article class="polaroid">
+            <div class="polaroid__header">
+              <span class="polaroid__avatar">👤</span>
+              <span class="polaroid__name">Nguyễn Minh Anh</span>
+            </div>
+            <p>
+              <span lang="vi">"Trước giờ cứ nghĩ đồ nhanh là phải dầu mỡ, nhưng Tossful làm mình thay đổi hẳn suy nghĩ. Salad ở đây siêu tươi, sốt đậm đà mà ăn xong không bị nặng bụng. Kale My Ex là chân ái nhé mọi người."</span>
+              <span lang="en">"I used to think fast food meant greasy. Tossful changed my mind — super-fresh salads, rich dressings, and you don't feel heavy after. Kale My Ex is my forever bowl."</span>
+            </p>
+            <p class="polaroid__date">23.1.2026</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BYO immersive ===== -->
+    <section class="byo">
+      <div class="container">
+        <h2 class="byo__title">
+          <span lang="vi">Tự Tay Mix Món</span>
+          <span lang="en">Build Your Own Bowl</span>
+        </h2>
+        <div class="byo-grid">
+
+          <article class="byo-step" style="background-image:url('images/ingredients/baby_tomatoes.jpg');">
+            <span class="byo-step__tag"><span lang="vi">BƯỚC 1</span><span lang="en">STEP 1</span></span>
+            <div>
+              <h3 class="byo-step__name">Base</h3>
+              <p class="byo-step__price">15K</p>
+              <p class="byo-step__desc">
+                <span lang="vi">Rau củ tươi được nhập từ các nông trại của Tossful tại Sơn La, Bắc Giang & Đà Lạt — quy trình gặt, hái, vận chuyển & chế biến không quá 24 tiếng.</span>
+                <span lang="en">Fresh greens from our partner farms in Sơn La, Bắc Giang & Đà Lạt — harvested, transported, and prepped within 24 hours.</span>
+              </p>
+            </div>
+          </article>
+
+          <article class="byo-step" style="background-image:url('images/ingredients/mushroom_mix.jpg');">
+            <span class="byo-step__tag"><span lang="vi">BƯỚC 2</span><span lang="en">STEP 2</span></span>
+            <div>
+              <h3 class="byo-step__name">Topping</h3>
+              <p class="byo-step__price">10-15K</p>
+              <p class="byo-step__desc">
+                <span lang="vi">Tinh bột & topping được phối theo khẩu phần hợp lý: vừa chiều khẩu vị, vừa bổ sung năng lượng cho một ngày bận rộn.</span>
+                <span lang="en">Carbs & toppings portioned to satisfy your taste and fuel a busy day.</span>
+              </p>
+            </div>
+          </article>
+
+          <article class="byo-step" style="background-image:url('images/ingredients/chicken_breast.jpg');">
+            <span class="byo-step__tag"><span lang="vi">BƯỚC 3</span><span lang="en">STEP 3</span></span>
+            <div>
+              <h3 class="byo-step__name">Premium</h3>
+              <p class="byo-step__price">15-200K</p>
+              <p class="byo-step__desc">
+                <span lang="vi">Nguồn đạm tươi, ngon, chuẩn chất lượng. Nướng / áp chảo ở nhiệt độ tối ưu để giữ nguyên vị, mọng mềm và giàu dinh dưỡng.</span>
+                <span lang="en">Fresh, high-quality proteins. Grilled or pan-seared at the right temp to keep them juicy and nutritious.</span>
+              </p>
+            </div>
+          </article>
+
+          <article class="byo-step" style="background-image:url('images/ingredients/pesto.jpg');">
+            <span class="byo-step__tag"><span lang="vi">BƯỚC 4</span><span lang="en">STEP 4</span></span>
+            <div>
+              <h3 class="byo-step__name">Dressing</h3>
+              <p class="byo-step__price">15K</p>
+              <p class="byo-step__desc">
+                <span lang="vi">Những loại sốt được pha chế thủ công, vị vừa vặn, giúp mỗi bowl trở nên hài hoà và tròn vị hơn chỉ với một lớp rưới nhẹ.</span>
+                <span lang="en">House-made dressings, balanced flavors — one light pour brings the whole bowl together.</span>
+              </p>
+            </div>
+          </article>
+
+        </div>
+        <div class="byo__cta">
+          <a class="btn btn-primary" href="https://beacons.ai/tossful" target="_blank" rel="noopener">
+            <span lang="vi">Chọn món ngay</span><span lang="en">Build your bowl</span> &nbsp;→
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CALCULATOR TEASER ===== -->
+    <section class="calc-teaser">
+      <div class="container">
+        <div class="calc-teaser__inner">
+          <div>
+            <span class="calc-teaser__eyebrow">
+              ✨ <span lang="vi">CÔNG CỤ MỚI · TÍNH CALO</span><span lang="en">NEW · KCAL CALCULATOR</span>
+            </span>
+            <h2 class="calc-teaser__title">
+              <span lang="vi">Tự tay mix bowl, biết ngay calo & giá</span>
+              <span lang="en">Build your bowl, see kcal & price instantly</span>
+            </h2>
+            <p class="calc-teaser__sub">
+              <span lang="vi">Cho khách mới đang muốn thử Tossful, cho khách quen đang tính calo. Cũng là sneak peek của Tossful Web Order sắp ra mắt.</span>
+              <span lang="en">For new guests curious about Tossful, and regulars tracking kcal. Also a sneak peek at Tossful Web Order — coming soon.</span>
+            </p>
+          </div>
+          <a class="btn btn-primary" href="calculator/index.html?src=brand-site">
+            <span lang="vi">Mở Tính Calo →</span><span lang="en">Open calculator →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SAUCE MANDALA ===== -->
+    <section class="sauces">
+      <div class="container">
+        <div class="sauce-mandala">
+
+          <div class="sauce-mandala__center">
+            <h2 class="sauce-mandala__title">
+              <span lang="vi">Chọn sốt đúng gu<br>Ăn ngon đúng vị</span>
+              <span lang="en">The right sauce,<br>the right bite</span>
+            </h2>
+            <ul class="sauce-mandala__points">
+              <li><span lang="vi">Công thức độc quyền từ Tossful</span><span lang="en">Tossful house recipes</span></li>
+              <li><span lang="vi">Sản xuất theo quy trình khép kín</span><span lang="en">Made in a closed in-house kitchen</span></li>
+              <li><span lang="vi">Không đường tinh luyện, không phụ gia nhân tạo</span><span lang="en">No refined sugar, no artificial additives</span></li>
+            </ul>
+            <a class="btn btn-primary" href="https://beacons.ai/tossful" target="_blank" rel="noopener">
+              <span lang="vi">Chọn món ngay</span><span lang="en">Order now</span> &nbsp;→
+            </a>
+          </div>
+
+          <div class="sauce-cup sauce-cup--1">
+            <img src="images/ingredients/spicy_cashew.jpg" alt="Xốt Thái">
+            <p class="sauce-cup__name"><span lang="vi">Xốt Thái</span><span lang="en">Thai Dressing</span></p>
+          </div>
+          <div class="sauce-cup sauce-cup--2">
+            <img src="images/ingredients/kumquat_honey_mustard.jpg" alt="Xốt Quất Mật Tật">
+            <p class="sauce-cup__name"><span lang="vi">Xốt Quất Mật Tật</span><span lang="en">Kumquat Honey Mustard</span></p>
+          </div>
+          <div class="sauce-cup sauce-cup--3">
+            <img src="images/ingredients/miso_sesame_ginger.jpg" alt="Xốt Miso Gừng Mè">
+            <p class="sauce-cup__name"><span lang="vi">Xốt Miso Gừng Mè</span><span lang="en">Miso Sesame Ginger</span></p>
+          </div>
+          <div class="sauce-cup sauce-cup--4">
+            <img src="images/ingredients/yogurt_caesar.jpg" alt="Xốt Caesar">
+            <p class="sauce-cup__name"><span lang="vi">Xốt Caesar</span><span lang="en">Yogurt Caesar</span></p>
+          </div>
+          <div class="sauce-cup sauce-cup--5">
+            <img src="images/ingredients/fennel_olive.jpg" alt="Xốt Oliu Tiểu hồi">
+            <p class="sauce-cup__name"><span lang="vi">Xốt Oliu Tiểu hồi</span><span lang="en">Fennel Olive</span></p>
+          </div>
+          <div class="sauce-cup sauce-cup--6">
+            <img src="images/ingredients/pesto.jpg" alt="Xốt Pesto">
+            <p class="sauce-cup__name"><span lang="vi">Xốt Pesto</span><span lang="en">Pesto</span></p>
+          </div>
+          <div class="sauce-cup sauce-cup--7">
+            <img src="images/ingredients/spicy_cashew.jpg" alt="Xốt Hạt Điều Cay">
+            <p class="sauce-cup__name"><span lang="vi">Xốt Hạt Điều Cay</span><span lang="en">Spicy Cashew</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER (DUPLICATE ACROSS PAGES) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <span class="footer-brand__lockup"><img src="images/logo-lockup-white.svg" alt="Tossful — A Bowl for Everyone"></span>
+        </div>
+
+        <div class="footer-col">
+          <h4><span lang="vi">Liên hệ với Tossful qua:</span><span lang="en">Get in touch with Tossful:</span></h4>
+          <div class="footer-contact">
+            <div>📧 <a href="mailto:tossful@gmail.com">tossful@gmail.com</a></div>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/tossful" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+            <a href="https://www.instagram.com/tossful_" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4><span lang="vi">Cửa hàng Tossful:</span><span lang="en">Tossful stores:</span></h4>
+          <div class="footer-stores">
+            <div class="footer-store">
+              <span class="footer-store__pill">CN Hà Nội</span>
+              <div>B1, Tòa nhà Capital Place,<br>29 Liễu Giai, Ba Đình, Hà Nội</div>
+            </div>
+            <div class="footer-store">
+              <span class="footer-store__pill footer-store__pill--hcm">CN TP.HCM</span>
+              <div>Metropole Thủ Thiêm – QPH7+H8V,<br>Đ. D6, Thủ Thiêm, Thủ Đức, TP.HCM</div>
+            </div>
+            <div class="footer-hours">
+              <span lang="vi"><strong>Giờ mở cửa:</strong> 10:00 – 20:30</span>
+              <span lang="en"><strong>Opening hours:</strong> 10:00 – 20:30</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Công ty TNHH TOSSFUL · MST 0111016936</span>
+        <span><em>A Bowl for Everyone.</em></span>
+      </div>
+    </div>
+  </footer>
+  <!-- ===== /FOOTER ===== -->
+
+  <!-- Welcome popup -->
+  <div class="popup-overlay" data-popup>
+    <div class="popup">
+      <button class="popup__close" data-popup-close aria-label="Đóng">×</button>
+      <h3><span lang="vi">Chào mừng đến Tossful 🥗</span><span lang="en">Welcome to Tossful 🥗</span></h3>
+      <p>
+        <span lang="vi">Đặt online lần đầu giảm <strong>100K</strong> + free 01 nước qua beacons.ai/tossful.</span>
+        <span lang="en">First online order: <strong>100K off</strong> + a free drink at beacons.ai/tossful.</span>
+      </p>
+      <a class="btn btn-primary" href="https://beacons.ai/tossful" target="_blank" rel="noopener">
+        <span lang="vi">Đặt ngay</span><span lang="en">Order now</span>
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

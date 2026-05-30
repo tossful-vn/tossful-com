@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thực đơn — Tossful</title>
+  <meta name="description" content="Thực đơn Tossful — Bowl, Wrap, đồ uống và đồ ăn chơi. Salad healthy, vị quốc tế, nguyên liệu Việt.">
+  <link rel="icon" href="images/logo-mark-green.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,300;1,9..144,400&family=Questrial&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">
+        <img src="images/logo-lockup-white.svg" alt="Tossful">
+      </a>
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html"><span lang="vi">Trang chủ</span><span lang="en">Home</span></a>
+        <a href="about.html"><span lang="vi">Về Tossful</span><span lang="en">About</span></a>
+        <a href="menu.html" class="is-active"><span lang="vi">Thực đơn</span><span lang="en">Menu</span></a>
+        <a href="calculator/index.html?src=brand-site" class="is-highlight">
+          <span lang="vi">Tính Calo</span><span lang="en">Calculator</span>
+          <span class="nav-badge"><span lang="vi">MỚI</span><span lang="en">NEW</span></span>
+        </a>
+        <a href="news.html"><span lang="vi">Tin tức</span><span lang="en">News</span></a>
+        <a href="careers.html"><span lang="vi">Tuyển dụng</span><span lang="en">Careers</span></a>
+      </nav>
+      <div class="site-header__right">
+        <a class="btn btn-pink" href="https://beacons.ai/tossful" target="_blank" rel="noopener"><span lang="vi">Đặt hàng</span><span lang="en">Order</span></a>
+        <button class="lang-switch" data-lang-toggle aria-label="Đổi ngôn ngữ / Change language">
+          🌐 <span data-lang-label>VI</span>
+        </button>
+        <button class="menu-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Mở menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Announcement marquee -->
+  <div class="announce">
+    <div class="announce__track">
+      <span><span lang="vi">Đăng ký thành viên off 100K & free 01 nước</span><span lang="en">Sign up — 100K off + free drink on us</span></span>
+      <span><span lang="vi">New Store Opening – Metropole Thủ Thiêm</span><span lang="en">New Store Opening – Metropole Thủ Thiêm</span></span>
+      <span><span lang="vi">20% Off đến hết 30/4</span><span lang="en">20% Off Until Apr 30</span></span>
+      <span><span lang="vi">Giao hàng nội thành nhanh trong 45 phút</span><span lang="en">Inner-city delivery in 45 minutes</span></span>
+      <span><span lang="vi">Đăng ký thành viên off 100K & free 01 nước</span><span lang="en">Sign up — 100K off + free drink on us</span></span>
+      <span><span lang="vi">New Store Opening – Metropole Thủ Thiêm</span><span lang="en">New Store Opening – Metropole Thủ Thiêm</span></span>
+      <span><span lang="vi">20% Off đến hết 30/4</span><span lang="en">20% Off Until Apr 30</span></span>
+      <span><span lang="vi">Giao hàng nội thành nhanh trong 45 phút</span><span lang="en">Inner-city delivery in 45 minutes</span></span>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ===== GREEN LEAF BANNER (matches Menu.png) ===== -->
+    <section class="menu-banner">
+      <div class="container">
+        <p class="menu-banner__text">
+          <span lang="vi">Thực phẩm tươi được nhập từ các nông trại của Tossful tại Sơn La, Bắc Giang & Đà Lạt cùng quá trình gặt, hái, vận chuyển & chế biến không quá 12 tiếng.</span>
+          <span lang="en">Fresh produce sourced from our farms in Sơn La, Bắc Giang & Đà Lạt — harvested, transported and prepared within 12 hours.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== CHEF MENU (featured) ===== -->
+    <section class="menu-section">
+      <div class="container">
+        <h2 class="menu-section__title"><span lang="vi">Chef menu</span><span lang="en">Chef menu</span></h2>
+
+        <div class="chef-grid">
+          <article class="chef-card">
+            <div class="chef-card__media">
+              <span class="chef-card__tag">TA DINING</span>
+              <img src="images/bowls/bowl-thai-me-up.jpg" alt="Thai Me Up" loading="lazy">
+            </div>
+            <h3 class="menu-item__name">Thai Me Up</h3>
+            <p class="menu-item__desc">
+              <span lang="vi">Cá diêu hồng, cơm gạo lứt, khoai lang nướng, hành phi, kale, salsa cà chua, lê, xốt Thái.</span>
+              <span lang="en">Red tilapia, brown rice, roasted sweet potato, crispy shallots, kale, tomato salsa, pear, Thai dressing.</span>
+            </p>
+            <p class="menu-item__meta">488 Kcal · GF · DF</p>
+          </article>
+
+          <article class="chef-card">
+            <div class="chef-card__media">
+              <span class="chef-card__tag">TA DINING</span>
+              <img src="images/bowls/bowl-shroomami.jpg" alt="Saigon Pearl" loading="lazy">
+            </div>
+            <h3 class="menu-item__name">Saigon Pearl</h3>
+            <p class="menu-item__desc">
+              <span lang="vi">Thăn lợn quay, kale, hạt hướng dương, lúa mạch trân châu Việt, trứng, cà chua bi, súp lơ xanh.</span>
+              <span lang="en">Pork tenderloin, kale, sunflower seeds, Vietnamese pearl barley, egg, baby tomatoes, broccoli.</span>
+            </p>
+            <p class="menu-item__meta">488 Kcal · GF · DF</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ĂN SẴN (Bowl / Wrap) ===== -->
+    <section class="menu-section" id="ansan">
+      <div class="container">
+        <h2 class="menu-section__title"><span lang="vi">Ăn sẵn</span><span lang="en">Ready-to-eat</span></h2>
+
+        <div class="tabs" data-tabs>
+          <div class="menu-subtabs" role="tablist">
+            <button class="menu-subtab" data-tab-group="ansan" data-tab-target="bowl" aria-selected="true">Bowl</button>
+            <button class="menu-subtab" data-tab-group="ansan" data-tab-target="wrap" aria-selected="false">Wrap</button>
+          </div>
+
+          <div class="tab-panel is-active" data-tab-panel-group="ansan" data-tab-panel="bowl">
+            <div class="menu-grid">
+
+              <article class="menu-item">
+                <div class="menu-item__media">
+                  <span class="tag">BEST SELLER</span>
+                  <img src="images/bowls/bowl-biet-dieu.jpg" alt="Biết Điều" loading="lazy">
+                </div>
+                <h3 class="menu-item__name">Biết Điều</h3>
+                <p class="menu-item__desc">
+                  <span lang="vi">Cơm bông cải trắng, cà chua bi, đậu lăng xanh, bắp cải muối, bí đỏ & khoai lang nướng, mix hạt nướng, xốt dẻo dẻo.</span>
+                  <span lang="en">Cauliflower rice, baby tomatoes, green lentils, pickled cabbage, roasted pumpkin & sweet potato, mixed seeds, signature dressing.</span>
+                </p>
+                <p class="menu-item__meta">488 Kcal · GF · DF</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="menu-item__media">
+                  <span class="tag">BEST SELLER</span>
+                  <img src="images/bowls/bowl-kale-my-ex.jpg" alt="Kale My Ex, Please!" loading="lazy">
+                </div>
+                <h3 class="menu-item__name">Kale My Ex, Please!</h3>
+                <p class="menu-item__desc">
+                  <span lang="vi">Xà lách Romaine, kale, cà chua bi, hạt nướng paprika, đậu mơ chua, bò nướng, parmesan, xốt caesar.</span>
+                  <span lang="en">Romaine, kale, baby tomatoes, paprika seeds, pickled apricot, grilled beef, parmesan, Caesar dressing.</span>
+                </p>
+                <p class="menu-item__meta">461 Kcal</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="menu-item__media">
+                  <span class="tag">BEST SELLER</span>
+                  <img src="images/bowls/bowl-fennel-fling.jpg" alt="Fennel Fling" loading="lazy">
+                </div>
+                <h3 class="menu-item__name">Fennel Fling</h3>
+                <p class="menu-item__desc">
+                  <span lang="vi">Xà lách Romaine, rau rocket, dưa leo, edamame, hạt nướng paprika, hành nướng, trứng, gừng cà, tôm nướng paprika, xốt Olive Tiểu hồi.</span>
+                  <span lang="en">Romaine, rocket, cucumber, edamame, paprika seeds, charred onion, egg, ginger, paprika prawns, fennel olive dressing.</span>
+                </p>
+                <p class="menu-item__meta">449 Kcal · DF</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="menu-item__media">
+                  <img src="images/bowls/bowl-festo.jpg" alt="Festo" loading="lazy">
+                </div>
+                <h3 class="menu-item__name">Festo</h3>
+                <p class="menu-item__desc">
+                  <span lang="vi">Rau, chân vịt, hạt diêm mạch quinoa, cà chua, súp lơ xanh nướng, đậu lăng, ức gà nướng, parmesan nướng giòn, xốt pesto & xốt Ý mật ong.</span>
+                  <span lang="en">Greens, spinach, quinoa, tomato, roasted broccoli, lentils, grilled chicken, crisp parmesan, pesto & honey-balsamic.</span>
+                </p>
+                <p class="menu-item__meta">437 Kcal</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="menu-item__media">
+                  <img src="images/bowls/bowl-dijon-vu.jpg" alt="Dijon Vu" loading="lazy">
+                </div>
+                <h3 class="menu-item__name">Dijon Vu</h3>
+                <p class="menu-item__desc">
+                  <span lang="vi">Rau, rocket, cà chua bi, hành nâu, mơ — quinoa, đậu, kiều mạch nướng, đậu vớt, kẹp cà chua, hạt hướng dương nướng paprika, phô mai feta, xốt quất mật ong mù tạt.</span>
+                  <span lang="en">Greens, rocket, baby tomatoes, brown onion, apricot — quinoa, beans, roasted buckwheat, beans, tomato wedge, paprika sunflower seeds, feta, kumquat honey mustard.</span>
+                </p>
+                <p class="menu-item__meta">530 Kcal · GF</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="menu-item__media">
+                  <img src="images/bowls/bowl-misocool.jpg" alt="Mi-so-cool" loading="lazy">
+                </div>
+                <h3 class="menu-item__name">Mi-so-cool</h3>
+                <p class="menu-item__desc">
+                  <span lang="vi">Rau cải bina, kale, cơm gạo lứt, edamame, hạt hướng dương rang, đậu cao muối, súp lơ xanh, củ dền và khoai nướng hành tím, cá hồi Nauy nướng, xốt miso gừng mè.</span>
+                  <span lang="en">Spinach, kale, brown rice, edamame, sunflower seeds, salted soy beans, broccoli, roasted beetroot & sweet potato with shallots, miso-roasted salmon, miso ginger sesame dressing.</span>
+                </p>
+                <p class="menu-item__meta">575 Kcal</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="menu-item__media">
+                  <span class="tag tag--vegan">VEGAN</span>
+                  <img src="images/bowls/bowl-shroomami.jpg" alt="Shroomami" loading="lazy">
+                </div>
+                <h3 class="menu-item__name">Shroomami</h3>
+                <p class="menu-item__desc">
+                  <span lang="vi">Rau, cải xoăn — kale, cơm gạo lứt, nấm tây, đậu nành, củ dền nướng, mix hạt nướng, hành tỏi, đậu phụ nướng mè, xốt miso gừng mè.</span>
+                  <span lang="en">Greens, kale, brown rice, mushroom mix, soybeans, roasted beetroot, mixed seeds, onion garlic, sesame tofu, miso ginger sesame.</span>
+                </p>
+                <p class="menu-item__meta">443 Kcal · V · DF</p>
+              </article>
+
+            </div>
+          </div>
+
+          <div class="tab-panel" data-tab-panel-group="ansan" data-tab-panel="wrap">
+            <div class="menu-grid">
+              <article class="menu-item">
+                <div class="menu-item__media" style="font-size:14px;opacity:0.55;">
+                  <span><span lang="vi">Wrap sắp ra mắt</span><span lang="en">Wraps coming soon</span></span>
+                </div>
+                <h3 class="menu-item__name"><span lang="vi">Đang lên ý tưởng</span><span lang="en">In development</span></h3>
+                <p class="menu-item__desc">
+                  <span lang="vi">Quay lại sớm — chúng tôi đang thử nghiệm vài lựa chọn wrap thú vị.</span>
+                  <span lang="en">Check back soon — we're testing a few exciting wrap options.</span>
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ĂN UỐNG ===== -->
+    <section class="menu-section" id="anuong">
+      <div class="container">
+        <h2 class="menu-section__title"><span lang="vi">Ăn uống</span><span lang="en">Drinks</span></h2>
+
+        <div class="menu-grid menu-grid--drinks">
+          <article class="menu-item">
+            <div class="menu-item__media">
+              <img src="images/ingredients/kumquat_honey_mustard.jpg" alt="I'm Alive Kombucha" loading="lazy">
+            </div>
+            <h3 class="menu-item__name">I'm Alive Kombucha</h3>
+            <p class="menu-item__desc">
+              <span lang="vi">Nước kombu lên men tự nhiên, vị thanh, hậu chua nhẹ. Vị nguyên bản, Lựu cà, Cherry chanh hồng, Gừng thanh long.</span>
+              <span lang="en">Naturally fermented kombucha — bright, lightly tart. Original, Pomegranate, Cherry lime, Ginger dragonfruit.</span>
+            </p>
+          </article>
+
+          <article class="menu-item">
+            <div class="menu-item__media">
+              <img src="images/ingredients/beetroot.jpg" alt="Trà Atiso Đỏ" loading="lazy">
+            </div>
+            <h3 class="menu-item__name">Trà Atiso Đỏ</h3>
+            <p class="menu-item__desc">
+              <span lang="vi">Sự kết hợp hoàn hảo của trà atiso đỏ và gừng giàu chất chống oxy hóa giúp thanh nhiệt, làm mát cơ thể và tốt cho sức khỏe.</span>
+              <span lang="en">Hibiscus + ginger — antioxidant-rich, cooling, and refreshing.</span>
+            </p>
+          </article>
+
+          <article class="menu-item">
+            <div class="menu-item__media">
+              <img src="images/ingredients/baby_tomatoes.jpg" alt="Ép Dưa Hấu" loading="lazy">
+            </div>
+            <h3 class="menu-item__name">Ép Dưa Hấu</h3>
+            <p class="menu-item__desc">
+              <span lang="vi">100% nguyên chất Sóc Trăng. Mát lành, đầy hương vị.</span>
+              <span lang="en">100% pure Sóc Trăng watermelon — cool, sweet, refreshing.</span>
+            </p>
+          </article>
+
+          <article class="menu-item">
+            <div class="menu-item__media">
+              <img src="images/ingredients/green_lettuce.jpg" alt="Ép Ổi" loading="lazy">
+            </div>
+            <h3 class="menu-item__name">Ép Ổi</h3>
+            <p class="menu-item__desc">
+              <span lang="vi">Nguồn Vitamin C dồi dào nuôi dưỡng quả ổi tươi tuyển chọn, mang lại hương vị tinh khôi và ngọt tự nhiên.</span>
+              <span lang="en">Vitamin-C-rich guava juice — fresh, bright, naturally sweet.</span>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ĂN CHƠI ===== -->
+    <section class="menu-section" id="anchoi">
+      <div class="container">
+        <h2 class="menu-section__title"><span lang="vi">Ăn chơi</span><span lang="en">Snacks</span></h2>
+
+        <div class="menu-grid">
+          <article class="menu-item">
+            <div class="menu-item__media">
+              <img src="images/sides/guacamole-chips.jpg" alt="Oven-Baked Chicken Popcorn" loading="lazy">
+            </div>
+            <h3 class="menu-item__name">Oven-Baked Chicken Popcorn</h3>
+            <p class="menu-item__desc">
+              <span lang="vi">Bao viên chiên xốp giòn rụm tẩm vị xốt ngon, ăn vặt cực thoả mãn.</span>
+              <span lang="en">Crispy oven-baked chicken popcorn — savory, snack-worthy bites.</span>
+            </p>
+          </article>
+
+          <article class="menu-item">
+            <div class="menu-item__media">
+              <img src="images/sides/guacamole-chips.jpg" alt="Guacamole + Cassava Chips" loading="lazy">
+            </div>
+            <h3 class="menu-item__name">Guacamole + Cassava Chips</h3>
+            <p class="menu-item__desc">
+              <span lang="vi">Bơ nghiền với lime, ngò, ớt — chấm bánh khoai mì giòn rụm.</span>
+              <span lang="en">Mashed avocado with lime, cilantro, chili — with crispy cassava chips.</span>
+            </p>
+          </article>
+        </div>
+
+        <div style="text-align:center; margin-top:56px;">
+          <a class="btn btn-primary" href="https://beacons.ai/tossful" target="_blank" rel="noopener">
+            <span lang="vi">Đặt hàng ngay</span><span lang="en">Order now</span> &nbsp;→
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-brand__lockup"><img src="images/logo-lockup-white.svg" alt="Tossful — A Bowl for Everyone"></span>
+        </div>
+        <div class="footer-col">
+          <h4><span lang="vi">Liên hệ với Tossful qua:</span><span lang="en">Get in touch with Tossful:</span></h4>
+          <div class="footer-contact">
+            <div>📧 <a href="mailto:tossful@gmail.com">tossful@gmail.com</a></div>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/tossful" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+            <a href="https://www.instagram.com/tossful_" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4><span lang="vi">Cửa hàng Tossful:</span><span lang="en">Tossful stores:</span></h4>
+          <div class="footer-stores">
+            <div class="footer-store">
+              <span class="footer-store__pill">CN Hà Nội</span>
+              <div>B1, Tòa nhà Capital Place,<br>29 Liễu Giai, Ba Đình, Hà Nội</div>
+            </div>
+            <div class="footer-store">
+              <span class="footer-store__pill footer-store__pill--hcm">CN TP.HCM</span>
+              <div>Metropole Thủ Thiêm – QPH7+H8V,<br>Đ. D6, Thủ Thiêm, Thủ Đức, TP.HCM</div>
+            </div>
+            <div class="footer-hours">
+              <span lang="vi"><strong>Giờ mở cửa:</strong> 10:00 – 20:30</span>
+              <span lang="en"><strong>Opening hours:</strong> 10:00 – 20:30</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Công ty TNHH TOSSFUL · MST 0111016936</span>
+        <span><em>A Bowl for Everyone.</em></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

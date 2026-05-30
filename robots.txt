@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /calculator/
+
+Sitemap: https://tossful.com/sitemap.xml

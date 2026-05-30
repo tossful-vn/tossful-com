@@ -1,0 +1,19 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/trang-chu", "destination": "/", "permanent": true },
+    { "source": "/cau-chuyen", "destination": "/about", "permanent": true },
+    { "source": "/feedbacks", "destination": "/news", "permanent": true },
+    { "source": "/tin-tuc", "destination": "/news", "permanent": true },
+    { "source": "/tuyen-dung", "destination": "/careers", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)\\.(?:js|css|svg|jpg|jpeg|png|webp|woff|woff2)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
+  ]
+}
