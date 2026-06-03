@@ -1,6 +1,10 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    { "source": "/calculator", "destination": "https://web-order-app.vercel.app/nutrition" },
+    { "source": "/calculator/:path*", "destination": "https://web-order-app.vercel.app/nutrition/:path*" }
+  ],
   "redirects": [
     { "source": "/trang-chu", "destination": "/", "permanent": true },
     { "source": "/cau-chuyen", "destination": "/about", "permanent": true },
