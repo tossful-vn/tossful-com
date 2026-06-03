@@ -1,5 +1,5 @@
 /* Tossful brand-site v2 — vanilla JS
-   Handles: language toggle, hero carousel, tabs, mobile nav, popup */
+   Handles: language toggle, hero carousel, tabs, mobile nav */
 
 (function () {
   /* ============================================================
@@ -90,25 +90,17 @@
      5. Bowl builder — REMOVED 2026-05-22.
      The brand-site previously had an inline builder widget here with
      hard-coded ingredient kcal/price estimates. That widget has been
-     replaced by the canonical Tossful nutrition calculator at
-     /calculator/index.html (a synced copy of
-     web-order/workshop/nutrition-calculator/index.html), embedded on
-     mix-bowl.html via iframe. Single source of truth, no drift, no
-     incorrect pricing on the marketing site.
+     replaced by the canonical Tossful nutrition calculator, which the
+     "Tính Calo" nav tab links to at /calculator. That path is a Vercel
+     rewrite to web-order-app's /nutrition route — single source of
+     truth, no drift, no incorrect pricing on the marketing site.
      ============================================================ */
 
   /* ============================================================
-     6. Welcome popup — 1.5s after first load, dismiss persistent per session
+     6. Welcome popup — PARKED (TSK-121, 2026-06-03).
+     The signup→voucher loop needs Phase 2 (login + iPOS API + automated
+     fulfilment); manual fulfilment doesn't scale during brand launch.
+     Popup component removed from the homepage. See
+     web-order/2026-06-03_popup-signup-voucher-investigation.md.
      ============================================================ */
-  var popup = document.querySelector('[data-popup]');
-  if (popup) {
-    var seen = sessionStorage.getItem('tossful-popup-seen');
-    if (!seen) setTimeout(function () { popup.classList.add('is-open'); }, 1500);
-    popup.addEventListener('click', function (e) {
-      if (e.target === popup || e.target.closest('[data-popup-close]')) {
-        popup.classList.remove('is-open');
-        sessionStorage.setItem('tossful-popup-seen', '1');
-      }
-    });
-  }
 })();
