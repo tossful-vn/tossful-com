@@ -16,25 +16,40 @@
   <!-- ===== HEADER ===== -->
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="site-header__logo" href="index.html"><img src="images/logo-lockup-white.svg" alt="Tossful"></a>
-      <nav class="site-nav" id="site-nav">
-        <a href="index.html"><span lang="vi">Trang chủ</span><span lang="en">Home</span></a>
-        <a href="about.html" class="is-active"><span lang="vi">Về Tossful</span><span lang="en">About</span></a>
+      <!-- LEFT: browse / discovery -->
+      <nav class="site-browse">
         <a href="menu.html"><span lang="vi">Thực đơn</span><span lang="en">Menu</span></a>
+        <a href="about.html" class="is-active"><span lang="vi">Về Tossful</span><span lang="en">About</span></a>
+        <a href="news.html"><span lang="vi">Tin tức</span><span lang="en">News</span></a>
+      </nav>
+      <!-- CENTER: logo -> home -->
+      <a class="site-header__logo" href="/">
+        <img src="images/logo-lockup-white.svg" alt="Tossful">
+      </a>
+      <!-- RIGHT: utility + CTA + lang + hamburger -->
+      <div class="site-header__right">
         <a href="/calculator?src=brand-site" class="is-highlight">
           <span lang="vi">Tính Calo</span><span lang="en">Calculator</span>
           <span class="nav-badge"><span lang="vi">MỚI</span><span lang="en">NEW</span></span>
         </a>
-        <a href="news.html"><span lang="vi">Tin tức</span><span lang="en">News</span></a>
-        <a href="careers.html"><span lang="vi">Tuyển dụng</span><span lang="en">Careers</span></a>
-      </nav>
-      <div class="site-header__right">
         <a class="btn btn-pink" href="https://beacons.ai/tossful" target="_blank" rel="noopener"><span lang="vi">Đặt hàng</span><span lang="en">Order</span></a>
         <button class="lang-switch" data-lang-toggle aria-label="Đổi ngôn ngữ / Change language">
           🌐 <span data-lang-label>VI</span>
         </button>
         <button class="menu-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Mở menu">☰</button>
       </div>
+      <!-- MOBILE drawer: full nav incl. Careers (toggled by hamburger) -->
+      <nav class="site-nav" id="site-nav">
+        <a href="/"><span lang="vi">Trang chủ</span><span lang="en">Home</span></a>
+        <a href="menu.html"><span lang="vi">Thực đơn</span><span lang="en">Menu</span></a>
+        <a href="about.html" class="is-active"><span lang="vi">Về Tossful</span><span lang="en">About</span></a>
+        <a href="news.html"><span lang="vi">Tin tức</span><span lang="en">News</span></a>
+        <a href="/calculator?src=brand-site" class="is-highlight">
+          <span lang="vi">Tính Calo</span><span lang="en">Calculator</span>
+          <span class="nav-badge"><span lang="vi">MỚI</span><span lang="en">NEW</span></span>
+        </a>
+        <a href="careers.html"><span lang="vi">Tuyển dụng</span><span lang="en">Careers</span></a>
+      </nav>
     </div>
   </header>
 
