@@ -69,37 +69,45 @@ html[lang="en"] [lang="vi"] { display: none !important; }
   position: sticky; top: 0; z-index: 60;
   background: var(--toss-kale); color: var(--toss-white);
 }
+/* TSK-125: Sweetgreen 3-column layout — browse LEFT, logo CENTER, utility RIGHT.
+   1fr auto 1fr keeps the logo geometrically centered regardless of side counts. */
 .site-header__inner {
-  display: flex; align-items: center; gap: 32px;
+  display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 24px;
   padding: 14px var(--gutter); max-width: var(--max-w); margin: 0 auto;
 }
-.site-header__logo img { height: 38px; width: auto; }
-.site-nav {
-  display: flex; gap: 32px; align-items: center; margin-left: auto;
+.site-header__logo { justify-self: center; }
+.site-header__logo img { height: 38px; width: auto; display: block; }
+
+/* LEFT browse nav + mobile drawer share the inline-link visuals */
+.site-browse { display: flex; gap: 28px; align-items: center; justify-self: start; }
+.site-browse, .site-nav {
   font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase;
 }
-.site-nav a { color: var(--toss-white); position: relative; padding: 6px 0; }
-.site-nav a:hover { opacity: 0.85; }
-.site-nav a.is-active::after {
+.site-browse a, .site-nav a { color: var(--toss-white); position: relative; padding: 6px 0; }
+.site-browse a:hover, .site-nav a:hover { opacity: 0.85; }
+.site-browse a.is-active::after, .site-nav a.is-active::after {
   content: ''; position: absolute; left: 0; right: 0; bottom: -4px;
   height: 2px; background: var(--toss-beetroot);
 }
-/* Highlighted nav item (calculator tab) */
-.site-nav a.is-highlight {
+/* Highlighted calculator pill — lives in RIGHT utility + mobile drawer */
+.site-header a.is-highlight {
   background: var(--toss-beetroot); color: var(--toss-kale);
   padding: 8px 16px; border-radius: var(--radius-pill);
   position: relative; font-weight: 500;
+  font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase;
 }
-.site-nav a.is-highlight:hover { background: var(--toss-white); opacity: 1; }
-.site-nav a.is-highlight.is-active { background: var(--toss-beetroot); }
-.site-nav a.is-highlight.is-active::after { display: none; }
-.site-nav a.is-highlight .nav-badge {
+.site-header a.is-highlight:hover { background: var(--toss-white); opacity: 1; }
+.site-header a.is-highlight.is-active { background: var(--toss-beetroot); }
+.site-header a.is-highlight.is-active::after { display: none; }
+.site-header a.is-highlight .nav-badge {
   display: inline-block; background: var(--toss-squash); color: var(--toss-white);
   font-size: 9px; font-weight: 600; letter-spacing: 0.1em;
   padding: 2px 6px; border-radius: 3px; margin-left: 6px;
   vertical-align: middle; position: relative; top: -1px;
 }
-.site-header__right { display: flex; align-items: center; gap: 16px; }
+.site-header__right { display: flex; align-items: center; gap: 16px; justify-self: end; }
+/* Drawer is mobile-only; hidden on desktop where browse/utility show inline. */
+.site-nav { display: none; }
 .lang-switch {
   background: transparent; border: 1.5px solid rgba(255,255,255,0.4);
   color: var(--toss-white); font-size: 12px; letter-spacing: 0.08em;
@@ -378,14 +386,18 @@ html[lang="en"] [lang="vi"] { display: none !important; }
 
 /* MOBILE NAV */
 @media (max-width: 900px) {
+  /* Collapse browse + utility links into the hamburger drawer; logo stays centered. */
+  .site-browse { display: none; }
+  .site-header__right .is-highlight,
+  .site-header__right .btn-pink { display: none; }
+  .menu-toggle { display: inline-flex; }
   .site-nav {
-    display: none; position: absolute; top: 100%; left: 0; right: 0;
+    position: absolute; top: 100%; left: 0; right: 0;
     background: var(--toss-kale); padding: 20px var(--gutter);
     flex-direction: column; gap: 18px;
     border-top: 1px solid rgba(255,255,255,0.15);
   }
   .site-nav.is-open { display: flex; }
-  .menu-toggle { display: inline-flex; }
   .site-header__inner { position: relative; }
 }
 
