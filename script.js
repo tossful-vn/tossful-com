@@ -59,7 +59,7 @@
      3. Tabs (Home, Menu, News, Careers)
      ============================================================ */
   document.querySelectorAll('[data-tabs]').forEach(function (root) {
-    var btns = root.querySelectorAll('.tab-headline, .tab-btn, .subtab-btn');
+    var btns = root.querySelectorAll('[data-tab-target]');  // any tab button (headline, subtab, menu/news/careers tabs)
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
         var group = btn.dataset.tabGroup || 'default';
@@ -97,10 +97,27 @@
      ============================================================ */
 
   /* ============================================================
-     6. Welcome popup — PARKED (TSK-121, 2026-06-03).
-     The signup→voucher loop needs Phase 2 (login + iPOS API + automated
-     fulfilment); manual fulfilment doesn't scale during brand launch.
-     Popup component removed from the homepage. See
-     web-order/2026-06-03_popup-signup-voucher-investigation.md.
+     6. Soft-opening popup — re-enabled 2026-07-18 per TCD marketing
+     package (Hieu approved). Static promo image -> beacons.ai; shown
+     once per browser session. The Phase-2 signup→voucher popup remains
+     a separate future project.
      ============================================================ */
+  var popup = document.getElementById('welcome-popup');
+  if (popup) {
+    var KEY = 'tossful-popup-seen';
+    var seen = false;
+    try { seen = sessionStorage.getItem(KEY) === '1'; } catch (e) {}
+    if (!seen) {
+      setTimeout(function () {
+        popup.hidden = false;
+        try { sessionStorage.setItem(KEY, '1'); } catch (e) {}
+      }, 1200);
+    }
+    popup.querySelectorAll('[data-popup-close]').forEach(function (el) {
+      el.addEventListener('click', function () { popup.hidden = true; });
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') popup.hidden = true;
+    });
+  }
 })();

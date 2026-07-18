@@ -14,41 +14,38 @@
 <body>
 
   <!-- ===== HEADER ===== -->
-  <header class="site-header">
+  <header class="site-header site-header--classic">
     <div class="site-header__inner">
-      <!-- LEFT: browse / discovery -->
-      <nav class="site-browse">
-        <a href="menu.html"><span lang="vi">Thực đơn</span><span lang="en">Menu</span></a>
-        <a href="about.html"><span lang="vi">Về Tossful</span><span lang="en">About</span></a>
-        <a href="news.html" class="is-active"><span lang="vi">Tin tức</span><span lang="en">News</span></a>
-      </nav>
-      <!-- CENTER: logo -> home -->
+      <!-- TCD mockup nav (2026-07-18): logo LEFT · 5 links · Đặt hàng + VI RIGHT.
+           Sweetgreen 3-col nav (TSK-125) parked for a future upgrade. -->
       <a class="site-header__logo" href="/">
         <img src="images/logo-lockup-white.svg" alt="Tossful">
       </a>
-      <!-- RIGHT: utility + CTA + lang + hamburger -->
+      <nav class="site-browse">
+        <a href="/"><span lang="vi">Trang chủ</span><span lang="en">Home</span></a>
+        <a href="about.html"><span lang="vi">Về Tossful</span><span lang="en">About</span></a>
+        <a href="menu.html"><span lang="vi">Thực đơn</span><span lang="en">Menu</span></a>
+        <a href="news.html" class="is-active"><span lang="vi">Tin tức</span><span lang="en">News</span></a>
+        <a href="careers.html"><span lang="vi">Tuyển dụng</span><span lang="en">Careers</span></a>
+      </nav>
       <div class="site-header__right">
-        <a href="https://my.tossful.com/nutrition" class="is-highlight">
-          <span lang="vi">Tính Calo</span><span lang="en">Calculator</span>
-          <span class="nav-badge"><span lang="vi">MỚI</span><span lang="en">NEW</span></span>
-        </a>
         <a class="btn btn-pink" href="https://beacons.ai/tossful" target="_blank" rel="noopener"><span lang="vi">Đặt hàng</span><span lang="en">Order</span></a>
         <button class="lang-switch" data-lang-toggle aria-label="Đổi ngôn ngữ / Change language">
           🌐 <span data-lang-label>VI</span>
         </button>
         <button class="menu-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Mở menu">☰</button>
       </div>
-      <!-- MOBILE drawer: full nav incl. Careers (toggled by hamburger) -->
+      <!-- MOBILE drawer -->
       <nav class="site-nav" id="site-nav">
         <a href="/"><span lang="vi">Trang chủ</span><span lang="en">Home</span></a>
-        <a href="menu.html"><span lang="vi">Thực đơn</span><span lang="en">Menu</span></a>
         <a href="about.html"><span lang="vi">Về Tossful</span><span lang="en">About</span></a>
+        <a href="menu.html"><span lang="vi">Thực đơn</span><span lang="en">Menu</span></a>
         <a href="news.html" class="is-active"><span lang="vi">Tin tức</span><span lang="en">News</span></a>
+        <a href="careers.html"><span lang="vi">Tuyển dụng</span><span lang="en">Careers</span></a>
         <a href="https://my.tossful.com/nutrition" class="is-highlight">
           <span lang="vi">Tính Calo</span><span lang="en">Calculator</span>
           <span class="nav-badge"><span lang="vi">MỚI</span><span lang="en">NEW</span></span>
         </a>
-        <a href="careers.html"><span lang="vi">Tuyển dụng</span><span lang="en">Careers</span></a>
       </nav>
     </div>
   </header>
@@ -58,7 +55,7 @@
     <!-- ===== FEATURED STORY BANNER ===== -->
     <section class="news-feature">
       <div class="news-feature__media">
-        <img src="images/marketing/news-hero.jpg" alt="Vietnam International Half Marathon 2025" loading="lazy">
+        <img src="images/news/vihm-2025.webp" alt="Vạch xuất phát Vietnam International Half Marathon 2025" loading="lazy">
       </div>
       <div class="news-feature__copy">
         <span class="news-feature__tag"><span lang="vi">SỰ KIỆN</span><span lang="en">EVENT</span></span>
@@ -92,7 +89,7 @@
         <div class="news-grid">
 
           <article class="news-card">
-            <div class="news-card__media"><img src="images/marketing/news-hero.jpg" alt="" loading="lazy"></div>
+            <div class="news-card__media"><img src="images/news/vihm-2025.webp" alt="" loading="lazy"></div>
             <div class="news-card__meta">
               <span class="news-card__tag news-card__tag--event">SỰ KIỆN</span>
               <span class="news-card__date">07/04/2025</span>
@@ -216,10 +213,12 @@
           <h4><span lang="vi">Liên hệ với Tossful qua:</span><span lang="en">Get in touch with Tossful:</span></h4>
           <div class="footer-contact">
             <div>📧 <a href="mailto:tossful@gmail.com">tossful@gmail.com</a></div>
+            <div>📞 <a href="tel:+84918768982">0918 768 982</a></div>
           </div>
           <div class="footer-social">
             <a href="https://www.facebook.com/tossful" target="_blank" rel="noopener" aria-label="Facebook">f</a>
             <a href="https://www.instagram.com/tossful_" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+            <a href="https://www.linkedin.com/company/tossful" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
           </div>
         </div>
         <div class="footer-col">

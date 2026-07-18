@@ -14,174 +14,179 @@
 <body>
 
   <!-- ===== HEADER ===== -->
-  <header class="site-header">
+  <header class="site-header site-header--classic">
     <div class="site-header__inner">
-      <!-- LEFT: browse / discovery -->
-      <nav class="site-browse">
-        <a href="menu.html"><span lang="vi">Thực đơn</span><span lang="en">Menu</span></a>
-        <a href="about.html" class="is-active"><span lang="vi">Về Tossful</span><span lang="en">About</span></a>
-        <a href="news.html"><span lang="vi">Tin tức</span><span lang="en">News</span></a>
-      </nav>
-      <!-- CENTER: logo -> home -->
+      <!-- TCD mockup nav (2026-07-18): logo LEFT · 5 links · Đặt hàng + VI RIGHT.
+           Sweetgreen 3-col nav (TSK-125) parked for a future upgrade. -->
       <a class="site-header__logo" href="/">
         <img src="images/logo-lockup-white.svg" alt="Tossful">
       </a>
-      <!-- RIGHT: utility + CTA + lang + hamburger -->
+      <nav class="site-browse">
+        <a href="/"><span lang="vi">Trang chủ</span><span lang="en">Home</span></a>
+        <a href="about.html" class="is-active"><span lang="vi">Về Tossful</span><span lang="en">About</span></a>
+        <a href="menu.html"><span lang="vi">Thực đơn</span><span lang="en">Menu</span></a>
+        <a href="news.html"><span lang="vi">Tin tức</span><span lang="en">News</span></a>
+        <a href="careers.html"><span lang="vi">Tuyển dụng</span><span lang="en">Careers</span></a>
+      </nav>
       <div class="site-header__right">
-        <a href="https://my.tossful.com/nutrition" class="is-highlight">
-          <span lang="vi">Tính Calo</span><span lang="en">Calculator</span>
-          <span class="nav-badge"><span lang="vi">MỚI</span><span lang="en">NEW</span></span>
-        </a>
         <a class="btn btn-pink" href="https://beacons.ai/tossful" target="_blank" rel="noopener"><span lang="vi">Đặt hàng</span><span lang="en">Order</span></a>
         <button class="lang-switch" data-lang-toggle aria-label="Đổi ngôn ngữ / Change language">
           🌐 <span data-lang-label>VI</span>
         </button>
         <button class="menu-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Mở menu">☰</button>
       </div>
-      <!-- MOBILE drawer: full nav incl. Careers (toggled by hamburger) -->
+      <!-- MOBILE drawer -->
       <nav class="site-nav" id="site-nav">
         <a href="/"><span lang="vi">Trang chủ</span><span lang="en">Home</span></a>
-        <a href="menu.html"><span lang="vi">Thực đơn</span><span lang="en">Menu</span></a>
         <a href="about.html" class="is-active"><span lang="vi">Về Tossful</span><span lang="en">About</span></a>
+        <a href="menu.html"><span lang="vi">Thực đơn</span><span lang="en">Menu</span></a>
         <a href="news.html"><span lang="vi">Tin tức</span><span lang="en">News</span></a>
+        <a href="careers.html"><span lang="vi">Tuyển dụng</span><span lang="en">Careers</span></a>
         <a href="https://my.tossful.com/nutrition" class="is-highlight">
           <span lang="vi">Tính Calo</span><span lang="en">Calculator</span>
           <span class="nav-badge"><span lang="vi">MỚI</span><span lang="en">NEW</span></span>
         </a>
-        <a href="careers.html"><span lang="vi">Tuyển dụng</span><span lang="en">Careers</span></a>
       </nav>
     </div>
   </header>
 
   <main>
 
-    <!-- ===== PHOTO-STRIP BANNER + INTRO ===== -->
-    <section class="about-banner">
-      <div class="about-banner__strip">
-        <img src="images/hero/hero-1.jpg" alt="" loading="lazy">
-        <img src="images/bowls/bowl-festo.jpg" alt="" loading="lazy">
-        <img src="images/bowls/bowl-kale-my-ex.jpg" alt="" loading="lazy">
-        <img src="images/hero/hero-2.jpg" alt="" loading="lazy">
-        <img src="images/hero/hero-3.jpg" alt="" loading="lazy">
-      </div>
-      <div class="about-banner__copy">
-        <span class="about-banner__eyebrow">Về Tossful</span>
-        <h1 class="about-banner__title">
-          <span lang="vi">Chúng tôi muốn bạn có cái nhìn rõ ràng về định nghĩa "ăn nhanh lành mạnh".</span>
-          <span lang="en">We want you to see a clear picture of what "healthy fast food" really means.</span>
-        </h1>
+    <!-- ===== HERO (Về Tossful a — wrap photo) ===== -->
+    <section class="about-hero">
+      <div class="about-hero__inner container">
+        <h1 class="about-hero__title"><span lang="vi">Về Tossful</span><span lang="en">About Tossful</span></h1>
+        <p class="about-hero__sub">
+          <span lang="vi">Chúng tôi muốn tái định nghĩa "đồ ăn nhanh lành mạnh"</span>
+          <span lang="en">We want to redefine "healthy fast food"</span>
+        </p>
       </div>
     </section>
 
-    <!-- ===== TWO STORE CARDS ===== -->
-    <section class="about-stores">
+    <!-- ===== TIMELINE (09.2024 HN → 04.2026 HCM) ===== -->
+    <section class="about-timeline">
       <div class="container">
-        <div class="about-stores__grid">
-          <article class="store-card">
-            <div class="store-card__media">
-              <img src="images/hero/hero-1.jpg" alt="Tossful Capital Place — Hà Nội" loading="lazy">
-            </div>
-            <div class="store-card__body">
-              <span class="store-card__tag"><span lang="vi">CỬA HÀNG ĐẦU TIÊN</span><span lang="en">FIRST STORE</span></span>
-              <h3 class="store-card__name">
-                <span lang="vi">Cửa hàng đầu tiên tại Capital Place — Hà Nội</span>
-                <span lang="en">First Tossful — Capital Place, Hà Nội</span>
-              </h3>
-              <p class="store-card__addr">
-                B1, Tòa nhà Capital Place,<br>
-                29 Liễu Giai, Ba Đình, Hà Nội
-              </p>
-            </div>
-          </article>
 
-          <article class="store-card">
-            <div class="store-card__media">
-              <img src="images/hero/hero-2.jpg" alt="Tossful Metropole Thủ Thiêm — TP.HCM" loading="lazy">
-            </div>
-            <div class="store-card__body">
-              <span class="store-card__tag"><span lang="vi">CỬA HÀNG MỚI MỞ</span><span lang="en">NEWLY OPENED</span></span>
-              <h3 class="store-card__name">
-                <span lang="vi">Cửa hàng thứ hai tại Metropole Thủ Thiêm — TP.HCM</span>
-                <span lang="en">Second Tossful — Metropole Thủ Thiêm, HCMC</span>
-              </h3>
-              <p class="store-card__addr">
-                Metropole Thủ Thiêm — QPH7+H8V,<br>
-                Đ. D6, Thủ Thiêm, Thủ Đức, TP.HCM
-              </p>
-            </div>
-          </article>
+        <div class="timeline-item">
+          <div class="timeline-item__copy">
+            <span class="timeline-item__date">09.2024</span>
+            <h2 class="timeline-item__title">
+              <span lang="vi">Cửa hàng đầu tiên tại<br>Capital Place - Hà Nội</span>
+              <span lang="en">Our first store —<br>Capital Place, Hà Nội</span>
+            </h2>
+          </div>
+          <div class="timeline-item__media">
+            <img src="images/about/timeline-2024-hn.webp" alt="Tossful Capital Place — 29 Liễu Giai, Ba Đình, Hà Nội" loading="lazy">
+          </div>
         </div>
+
+        <div class="timeline-item is-flipped">
+          <div class="timeline-item__copy">
+            <span class="timeline-item__date">04.2026</span>
+            <h2 class="timeline-item__title">
+              <span lang="vi">Cửa hàng thứ hai tại<br>Metropole Thủ Thiêm - TP. Hồ Chí Minh</span>
+              <span lang="en">Our second store —<br>Metropole Thủ Thiêm, HCMC</span>
+            </h2>
+          </div>
+          <div class="timeline-item__media">
+            <img src="images/about/timeline-2026-hcm.webp" alt="Tossful Metropole Thủ Thiêm — A1.10 The Galleria" loading="lazy">
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- ===== ALTERNATING FEATURE ROWS ===== -->
+    <!-- ===== FEATURE ROWS (theo mockup TCD) ===== -->
     <section class="feature-rows">
 
-      <div class="feature-row feature-row--squash">
-        <div class="feature-row__media">
-          <img src="images/bowls/bowl-festo.jpg" alt="" loading="lazy">
-        </div>
+      <!-- KẾT HỢP — catering (orange) -->
+      <div class="feature-row feature-row--squash feature-row--bg-ket-hop">
         <div class="feature-row__copy">
-          <span class="feature-row__tag"><span lang="vi">SỨ MỆNH</span><span lang="en">MISSION</span></span>
-          <h2 class="feature-row__title">
-            <span lang="vi">Tossful ra đời với sứ mệnh "làm mới" khái niệm "ăn nhanh lành mạnh".</span>
-            <span lang="en">Tossful was born to reinvent what "healthy fast food" feels like.</span>
-          </h2>
-          <p class="feature-row__body">
-            <span lang="vi">Không phải sự đánh đổi giữa nhanh và lành — mà là sự hoà quyện giữa hương vị và dinh dưỡng trong từng bowl.</span>
-            <span lang="en">Not a trade-off between speed and health — a balance of flavor and nutrition in every bowl.</span>
-          </p>
+          <div>
+            <h2 class="feature-row__title">
+              <span lang="vi"><span class="feature-row__tag">KẾT HỢP</span> giải pháp bữa ăn lành mạnh cho doanh nghiệp, event, webinar,...</span>
+              <span lang="en"><span class="feature-row__tag">CATERING</span> healthy meal solutions for offices, events, webinars…</span>
+            </h2>
+          </div>
+        </div>
+        <div class="feature-row__media">
+          <img src="images/about/ket-hop-catering.webp" alt="Tossful catering — sandwich box cho event doanh nghiệp" loading="lazy">
         </div>
       </div>
 
-      <div class="feature-row feature-row--almond is-flipped">
-        <div class="feature-row__media">
-          <img src="images/ingredients/baby_tomatoes.jpg" alt="" loading="lazy">
-        </div>
+      <!-- SỨ MỆNH — LÀM MỚI (cream) -->
+      <div class="feature-row feature-row--cream is-flipped">
         <div class="feature-row__copy">
-          <span class="feature-row__tag"><span lang="vi">CÂU CHUYỆN</span><span lang="en">STORY</span></span>
-          <h2 class="feature-row__title">
-            <span lang="vi">Tossful kết hợp những nguyên liệu địa phương với nhau.</span>
-            <span lang="en">Tossful brings together local ingredients with care.</span>
-          </h2>
-          <p class="feature-row__body">
-            <span lang="vi">Mỗi món đều mang trong mình câu chuyện của các vùng đất — từ Sơn La, Bắc Giang, Đà Lạt — về với bữa ăn của bạn.</span>
-            <span lang="en">Every dish carries the story of a region — Sơn La, Bắc Giang, Đà Lạt — onto your plate.</span>
-          </p>
+          <div>
+            <span class="feature-row__eyebrow"><span lang="vi">SỨ MỆNH</span><span lang="en">MISSION</span></span>
+            <h2 class="feature-row__title">
+              <span lang="vi">Tossful ra đời với sứ mệnh <span class="feature-row__tag feature-row__tag--green">LÀM MỚI</span> khái niệm "đồ ăn nhanh lành mạnh"</span>
+              <span lang="en">Tossful was born to <span class="feature-row__tag feature-row__tag--green">REFRESH</span> the idea of "healthy fast food"</span>
+            </h2>
+            <p class="feature-row__body">
+              <span lang="vi">Nhanh nhưng sạch, tươi và cân bằng dinh dưỡng. Một bữa ăn giúp bạn theo kịp deadlines mà không phải đánh đổi sức khỏe.</span>
+              <span lang="en">Fast but clean, fresh and balanced — a meal that keeps up with your deadlines without trading away your health.</span>
+            </p>
+          </div>
+        </div>
+        <div class="feature-row__media">
+          <img src="images/about/lam-moi-bowl.webp" alt="Bowl Tossful vừa hoàn thành trong bếp" loading="lazy">
         </div>
       </div>
 
-      <div class="feature-row feature-row--cabbage">
-        <div class="feature-row__media">
-          <img src="images/ingredients/kales.jpg" alt="" loading="lazy">
-        </div>
+      <!-- CÂU CHUYỆN — KẾT HỢP nguyên liệu (dark red) -->
+      <div class="feature-row feature-row--almond feature-row--bg-cau-chuyen">
         <div class="feature-row__copy">
-          <span class="feature-row__tag"><span lang="vi">XÂY DỰNG</span><span lang="en">BUILDING</span></span>
-          <h2 class="feature-row__title">
-            <span lang="vi">Tossful đang trên hành trình xây dựng cộng đồng lành mạnh.</span>
-            <span lang="en">Tossful is on a mission to grow a healthy community.</span>
-          </h2>
-          <p class="feature-row__body">
-            <span lang="vi">Vận hành ngày qua ngày, những bạn đến cửa hàng cũng đang xây cùng chúng tôi từng bowl, từng câu chuyện.</span>
-            <span lang="en">Day after day, the people who walk in are building this story bowl by bowl with us.</span>
-          </p>
+          <div>
+            <span class="feature-row__eyebrow"><span lang="vi">CÂU CHUYỆN</span><span lang="en">STORY</span></span>
+            <h2 class="feature-row__title">
+              <span lang="vi">Tossful <span class="feature-row__tag feature-row__tag--pink">KẾT HỢP</span> những nguyên liệu địa phương tốt nhất</span>
+              <span lang="en">Tossful <span class="feature-row__tag feature-row__tag--pink">COMBINES</span> the best local ingredients</span>
+            </h2>
+            <p class="feature-row__body">
+              <span lang="vi">với một chút sáng tạo và một muỗng đầy đủ đam mê để tạo ra những bát salad thú vị và đáng thử.</span>
+              <span lang="en">with a dash of creativity and a full spoon of passion — salads worth getting excited about.</span>
+            </p>
+          </div>
+        </div>
+        <div class="feature-row__media">
+          <img src="images/about/cau-chuyen-rua-ca-chua.webp" alt="Rửa cà chua tươi tại bếp Tossful" loading="lazy">
         </div>
       </div>
 
-      <div class="feature-row feature-row--beetroot is-flipped">
-        <div class="feature-row__media">
-          <img src="images/bowls/bowl-misocool.jpg" alt="" loading="lazy">
-        </div>
-        <div class="feature-row__copy">
-          <span class="feature-row__tag"><span lang="vi">TUYỂN CHỌN</span><span lang="en">CRAFT</span></span>
+      <!-- XÂY DỰNG — cộng đồng (cream, centered) -->
+      <div class="about-community">
+        <img class="about-community__veg about-community__veg--left" src="images/about/veg-beet.webp" alt="" aria-hidden="true">
+        <div class="about-community__copy">
           <h2 class="feature-row__title">
-            <span lang="vi">Quá trình gặt, hái, vận chuyển, chế biến của Tossful không quá 12 tiếng.</span>
-            <span lang="en">From farm to bowl — harvested, transported, prepped in under 12 hours.</span>
+            <span lang="vi">Tossful đang trên hành trình<br><span class="feature-row__tag feature-row__tag--almond">XÂY DỰNG</span> một cộng đồng lành mạnh</span>
+            <span lang="en">Tossful is on a journey to<br><span class="feature-row__tag feature-row__tag--almond">BUILD</span> a healthy community</span>
           </h2>
           <p class="feature-row__body">
-            <span lang="vi">Đó là chuẩn mực Tossful đặt ra cho chính mình để mỗi nguyên liệu đến tay bạn đều giữ trọn độ tươi và dinh dưỡng.</span>
-            <span lang="en">A standard we hold ourselves to — every ingredient hits your bowl at peak freshness.</span>
+            <span lang="vi">của những người yêu salad, những người ôm trọn cuộc sống với những nụ cười.</span>
+            <span lang="en">of salad lovers — people who embrace life with a smile.</span>
           </p>
+        </div>
+        <img class="about-community__veg about-community__veg--right" src="images/about/veg-orange.webp" alt="" aria-hidden="true">
+      </div>
+
+      <!-- SỰ BỀN VỮNG — 24h (pink) -->
+      <div class="feature-row feature-row--beetroot feature-row--bg-ben-vung is-flipped">
+        <div class="feature-row__copy">
+          <div>
+            <span class="feature-row__eyebrow"><span lang="vi">SỰ BỀN VỮNG</span><span lang="en">SUSTAINABILITY</span></span>
+            <h2 class="feature-row__title">
+              <span lang="vi">Quá trình gặt, hái, vận chuyển, chế biến của Tossful không quá 24h</span>
+              <span lang="en">Harvested, transported and prepped — never more than 24 hours</span>
+            </h2>
+            <p class="feature-row__body">
+              <span lang="vi">đảm bảo trong bát salad của bạn vẫn còn tươi mát, ngon lành khi đến tay bạn!</span>
+              <span lang="en">so every bowl reaches you fresh, crisp and full of flavor!</span>
+            </p>
+          </div>
+        </div>
+        <div class="feature-row__media">
+          <img src="images/about/ben-vung-tui-giay.webp" alt="Túi giấy Tossful giữa nông trại rau" loading="lazy">
         </div>
       </div>
 
@@ -200,10 +205,12 @@
           <h4><span lang="vi">Liên hệ với Tossful qua:</span><span lang="en">Get in touch with Tossful:</span></h4>
           <div class="footer-contact">
             <div>📧 <a href="mailto:tossful@gmail.com">tossful@gmail.com</a></div>
+            <div>📞 <a href="tel:+84918768982">0918 768 982</a></div>
           </div>
           <div class="footer-social">
             <a href="https://www.facebook.com/tossful" target="_blank" rel="noopener" aria-label="Facebook">f</a>
             <a href="https://www.instagram.com/tossful_" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+            <a href="https://www.linkedin.com/company/tossful" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
           </div>
         </div>
         <div class="footer-col">

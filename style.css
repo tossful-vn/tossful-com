@@ -516,7 +516,7 @@ html[lang="en"] [lang="vi"] { display: none !important; }
   background: var(--toss-kale-deep);
   background-image:
     linear-gradient(180deg, rgba(15,86,61,0.65) 0%, rgba(15,86,61,0.5) 100%),
-    url('images/ingredients/kales.jpg');
+    url('images/hero/menu-hero.webp');
   background-size: cover; background-position: center;
   color: var(--toss-white); text-align: center;
   padding: clamp(56px, 8vw, 96px) 0;
@@ -881,3 +881,142 @@ html[lang="en"] [lang="vi"] { display: none !important; }
   .job-row { grid-template-columns: 1fr; gap: 8px; }
   .btn-apply { justify-self: flex-start; margin-top: 6px; }
 }
+
+
+/* =========================================================================
+   TCD MARKETING PACKAGE UPDATE — 2026-07-18
+   Nav classic (mockup TCD) · popup · photo polaroids · about rebuild ·
+   careers grid image. Sweetgreen nav (TSK-125) parked for future upgrade.
+   ========================================================================= */
+
+/* ----- Header: classic mockup layout (logo LEFT · links · CTA right) ----- */
+.site-header--classic .site-header__inner {
+  grid-template-columns: auto 1fr auto;
+}
+.site-header--classic .site-header__logo { justify-self: start; }
+.site-header--classic .site-browse {
+  justify-self: end;
+  gap: clamp(16px, 2.4vw, 34px);
+  font-size: 13.5px; letter-spacing: 0.12em; text-transform: uppercase;
+}
+.site-header--classic .site-browse a.is-active::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: 0;
+  height: 1px; background: var(--toss-white);
+}
+@media (max-width: 1080px) {
+  .site-header--classic .site-browse { display: none; }
+  .site-header--classic .menu-toggle { display: block; }
+}
+
+/* ----- Bowl-card white tile (drinks & snacks with packshot images) ----- */
+.bowl-card__media--tile { background: var(--toss-white); }
+.bowl-card__media--tile img { object-fit: contain; padding: 18px; }
+
+/* ----- Photo polaroids (Feedback 1/2 from TCD package) ----- */
+.polaroid--photo { background: transparent; box-shadow: none; padding: 0; }
+.polaroid--photo img { width: 100%; height: auto; display: block; }
+
+/* ----- Popup (Soft Opening — per TCD package) ----- */
+.popup { position: fixed; inset: 0; z-index: 200; display: flex; align-items: center; justify-content: center; }
+.popup[hidden] { display: none; }
+.popup__backdrop { position: absolute; inset: 0; background: rgba(10, 62, 44, 0.55); }
+.popup__dialog {
+  position: relative; max-width: min(720px, 92vw); margin: 0 16px;
+  border-radius: var(--radius); overflow: hidden;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.35);
+}
+.popup__dialog img { width: 100%; height: auto; display: block; }
+.popup__close {
+  position: absolute; top: 10px; right: 10px; z-index: 2;
+  width: 36px; height: 36px; border-radius: 50%;
+  border: 0; background: rgba(255,255,255,0.92); color: var(--toss-kale);
+  font-size: 16px; cursor: pointer; line-height: 1;
+}
+.popup__close:hover { background: var(--toss-white); }
+
+/* ----- About: full-bleed hero (Về Tossful a) ----- */
+.about-hero {
+  position: relative; color: var(--toss-white);
+  background:
+    linear-gradient(180deg, rgba(10,62,44,0.15) 30%, rgba(10,62,44,0.55) 100%),
+    url('images/about/about-hero.webp') center / cover no-repeat;
+  min-height: clamp(320px, 42vw, 520px);
+  display: flex; align-items: flex-end;
+}
+.about-hero__inner { width: 100%; padding-top: 48px; padding-bottom: clamp(32px, 4vw, 56px); }
+.about-hero__title {
+  font-family: var(--font-head); font-style: italic; font-weight: 300;
+  letter-spacing: -0.04em; font-size: clamp(44px, 6vw, 72px);
+  margin: 0 0 10px; line-height: 1.05;
+}
+.about-hero__sub { font-size: clamp(15px, 1.6vw, 18px); opacity: 0.94; margin: 0; }
+
+/* ----- About: timeline 09.2024 → 04.2026 ----- */
+.about-timeline { background: var(--toss-cabbage); padding: clamp(56px, 7vw, 96px) 0; }
+.timeline-item {
+  display: grid; grid-template-columns: 1fr 1.15fr; gap: clamp(24px, 4vw, 64px);
+  align-items: center; padding: clamp(24px, 3vw, 40px) 0;
+}
+.timeline-item.is-flipped .timeline-item__copy { order: 2; }
+.timeline-item.is-flipped .timeline-item__media { order: 1; }
+.timeline-item__date {
+  display: inline-block; background: var(--toss-squash); color: var(--toss-white);
+  font-size: 15px; letter-spacing: 0.06em; padding: 4px 14px; margin-bottom: 14px;
+}
+.timeline-item__title {
+  font-family: var(--font-head); font-style: italic; font-weight: 300;
+  letter-spacing: -0.03em; color: var(--toss-kale);
+  font-size: clamp(28px, 3.4vw, 44px); line-height: 1.15; margin: 0;
+}
+.timeline-item__media img { width: 100%; height: auto; display: block; }
+@media (max-width: 760px) {
+  .timeline-item { grid-template-columns: 1fr; }
+  .timeline-item.is-flipped .timeline-item__copy { order: 1; }
+  .timeline-item.is-flipped .timeline-item__media { order: 2; }
+}
+
+/* ----- About: feature-row refinements (TCD sections) ----- */
+.feature-row__eyebrow {
+  display: block; font-size: 12px; letter-spacing: 0.2em;
+  text-transform: uppercase; opacity: 0.85; margin-bottom: 14px;
+}
+.feature-row__tag--green { background: var(--toss-kale); color: var(--toss-white); }
+.feature-row__tag--pink { background: var(--toss-beetroot); color: var(--toss-almond); }
+.feature-row__tag--almond { background: var(--toss-almond); color: var(--toss-white); }
+.feature-row .feature-row__tag { display: inline-block; transform: translateY(-4px); }
+.feature-row--bg-ket-hop .feature-row__copy {
+  background: var(--toss-squash) url('images/about/bg-ket-hop.webp') center / cover no-repeat;
+}
+.feature-row--bg-cau-chuyen .feature-row__copy {
+  background: var(--toss-almond) url('images/about/bg-cau-chuyen.webp') center / cover no-repeat;
+}
+.feature-row--bg-ben-vung .feature-row__copy {
+  background: var(--toss-beetroot) url('images/about/bg-ben-vung.webp') center / cover no-repeat;
+}
+.feature-row--cream .feature-row__copy {
+  background: #F6F3E8 url('images/about/bg-lam-moi.webp') center / cover no-repeat;
+  color: var(--toss-black-rice);
+}
+.feature-row--cream .feature-row__title { color: var(--toss-kale); }
+.feature-row--beetroot .feature-row__title { color: var(--toss-almond); }
+.feature-row--beetroot .feature-row__copy { color: var(--toss-almond); }
+
+/* ----- About: community band (XÂY DỰNG) ----- */
+.about-community {
+  background: var(--toss-cabbage); text-align: center;
+  padding: clamp(56px, 7vw, 96px) var(--gutter);
+  position: relative; overflow: hidden;
+}
+.about-community__copy { max-width: 720px; margin: 0 auto; position: relative; z-index: 1; }
+.about-community .feature-row__title { color: var(--toss-kale); }
+.about-community .feature-row__body { margin: 16px auto 0; max-width: 52ch; }
+.about-community__veg {
+  position: absolute; width: clamp(70px, 9vw, 130px); height: auto; opacity: 0.95;
+}
+.about-community__veg--left { left: clamp(8px, 4vw, 72px); top: 50%; transform: translateY(-50%); }
+.about-community__veg--right { right: clamp(8px, 4vw, 72px); top: 50%; transform: translateY(-50%); }
+@media (max-width: 700px) { .about-community__veg { display: none; } }
+
+/* ----- Careers: single grid image hero (Tuyển dụng a) ----- */
+.careers-collage--single { display: block; height: auto; }
+.careers-collage--single img { width: 100%; height: auto; display: block; }

@@ -14,41 +14,38 @@
 <body>
 
   <!-- ===== HEADER ===== -->
-  <header class="site-header">
+  <header class="site-header site-header--classic">
     <div class="site-header__inner">
-      <!-- LEFT: browse / discovery -->
-      <nav class="site-browse">
-        <a href="menu.html"><span lang="vi">Thực đơn</span><span lang="en">Menu</span></a>
-        <a href="about.html"><span lang="vi">Về Tossful</span><span lang="en">About</span></a>
-        <a href="news.html"><span lang="vi">Tin tức</span><span lang="en">News</span></a>
-      </nav>
-      <!-- CENTER: logo -> home -->
+      <!-- TCD mockup nav (2026-07-18): logo LEFT · 5 links · Đặt hàng + VI RIGHT.
+           Sweetgreen 3-col nav (TSK-125) parked for a future upgrade. -->
       <a class="site-header__logo" href="/">
         <img src="images/logo-lockup-white.svg" alt="Tossful">
       </a>
-      <!-- RIGHT: utility + CTA + lang + hamburger -->
+      <nav class="site-browse">
+        <a href="/"><span lang="vi">Trang chủ</span><span lang="en">Home</span></a>
+        <a href="about.html"><span lang="vi">Về Tossful</span><span lang="en">About</span></a>
+        <a href="menu.html"><span lang="vi">Thực đơn</span><span lang="en">Menu</span></a>
+        <a href="news.html"><span lang="vi">Tin tức</span><span lang="en">News</span></a>
+        <a href="careers.html" class="is-active"><span lang="vi">Tuyển dụng</span><span lang="en">Careers</span></a>
+      </nav>
       <div class="site-header__right">
-        <a href="https://my.tossful.com/nutrition" class="is-highlight">
-          <span lang="vi">Tính Calo</span><span lang="en">Calculator</span>
-          <span class="nav-badge"><span lang="vi">MỚI</span><span lang="en">NEW</span></span>
-        </a>
         <a class="btn btn-pink" href="https://beacons.ai/tossful" target="_blank" rel="noopener"><span lang="vi">Đặt hàng</span><span lang="en">Order</span></a>
         <button class="lang-switch" data-lang-toggle aria-label="Đổi ngôn ngữ / Change language">
           🌐 <span data-lang-label>VI</span>
         </button>
         <button class="menu-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Mở menu">☰</button>
       </div>
-      <!-- MOBILE drawer: full nav incl. Careers (toggled by hamburger) -->
+      <!-- MOBILE drawer -->
       <nav class="site-nav" id="site-nav">
         <a href="/"><span lang="vi">Trang chủ</span><span lang="en">Home</span></a>
-        <a href="menu.html"><span lang="vi">Thực đơn</span><span lang="en">Menu</span></a>
         <a href="about.html"><span lang="vi">Về Tossful</span><span lang="en">About</span></a>
+        <a href="menu.html"><span lang="vi">Thực đơn</span><span lang="en">Menu</span></a>
         <a href="news.html"><span lang="vi">Tin tức</span><span lang="en">News</span></a>
+        <a href="careers.html" class="is-active"><span lang="vi">Tuyển dụng</span><span lang="en">Careers</span></a>
         <a href="https://my.tossful.com/nutrition" class="is-highlight">
           <span lang="vi">Tính Calo</span><span lang="en">Calculator</span>
           <span class="nav-badge"><span lang="vi">MỚI</span><span lang="en">NEW</span></span>
         </a>
-        <a href="careers.html" class="is-active"><span lang="vi">Tuyển dụng</span><span lang="en">Careers</span></a>
       </nav>
     </div>
   </header>
@@ -56,13 +53,8 @@
   <main>
 
     <!-- ===== PHOTO COLLAGE HERO ===== -->
-    <section class="careers-collage">
-      <div><img src="images/bowls/bowl-festo.jpg" alt="" loading="lazy"></div>
-      <div><img src="images/hero/hero-1.jpg" alt="" loading="lazy"></div>
-      <div><img src="images/hero/hero-2.jpg" alt="" loading="lazy"></div>
-      <div><img src="images/bowls/bowl-kale-my-ex.jpg" alt="" loading="lazy"></div>
-      <div><img src="images/bowls/bowl-misocool.jpg" alt="" loading="lazy"></div>
-      <div><img src="images/hero/hero-3.jpg" alt="" loading="lazy"></div>
+    <section class="careers-collage careers-collage--single">
+      <img src="images/careers/careers-grid.webp" alt="Đội ngũ Tossful — chuẩn bị bowl, quầy salad, đóng gói đơn hàng" loading="eager">
     </section>
 
     <!-- ===== JOB LIST ===== -->
@@ -89,7 +81,7 @@
                   <span class="job-row__meta-item">📅 Full time</span>
                   <span class="job-row__meta-item"><span lang="vi">Cơ sở Capital Place (Hà Nội)</span><span lang="en">Capital Place (HN)</span></span>
                 </div>
-                <div class="job-row__salary">💵 15.000.000 — 18.000.000 VNĐ</div>
+                <div class="job-row__salary">💵 12.000.000 — 18.000.000 VNĐ</div>
                 <a class="btn-apply" href="https://docs.google.com/forms/d/11VW0A2qsc4G-eBKSBTBrq-EhmrdWaXu2-s2IT78nVkE/viewform" target="_blank" rel="noopener">
                   <span lang="vi">ỨNG TUYỂN</span><span lang="en">APPLY</span>
                 </a>
@@ -113,7 +105,7 @@
                   <span class="job-row__meta-item">📅 Part time</span>
                   <span class="job-row__meta-item"><span lang="vi">Cơ sở Capital Place (Hà Nội)</span><span lang="en">Capital Place (HN)</span></span>
                 </div>
-                <div class="job-row__salary">💵 30.000 VNĐ/giờ + phụ cấp</div>
+                <div class="job-row__salary">💵 28.000 — 30.000 VNĐ/giờ + phụ cấp</div>
                 <a class="btn-apply" href="https://docs.google.com/forms/d/11VW0A2qsc4G-eBKSBTBrq-EhmrdWaXu2-s2IT78nVkE/viewform" target="_blank" rel="noopener">
                   <span lang="vi">ỨNG TUYỂN</span><span lang="en">APPLY</span>
                 </a>
@@ -137,7 +129,7 @@
                   <span class="job-row__meta-item">📅 Full time</span>
                   <span class="job-row__meta-item"><span lang="vi">Cơ sở Capital Place (Hà Nội)</span><span lang="en">Capital Place (HN)</span></span>
                 </div>
-                <div class="job-row__salary">💵 5.000.000 — 6.000.000 VNĐ + KPI + phụ cấp</div>
+                <div class="job-row__salary">💵 7.000.000 — 9.000.000 VNĐ + KPI + phụ cấp</div>
                 <a class="btn-apply" href="https://docs.google.com/forms/d/11VW0A2qsc4G-eBKSBTBrq-EhmrdWaXu2-s2IT78nVkE/viewform" target="_blank" rel="noopener">
                   <span lang="vi">ỨNG TUYỂN</span><span lang="en">APPLY</span>
                 </a>
@@ -154,7 +146,7 @@
                   <span class="job-row__meta-item">📅 Full time</span>
                   <span class="job-row__meta-item">Capital Place (HN)</span>
                 </div>
-                <div class="job-row__salary">💵 15.000.000 — 18.000.000 VNĐ</div>
+                <div class="job-row__salary">💵 12.000.000 — 18.000.000 VNĐ</div>
                 <a class="btn-apply" href="https://docs.google.com/forms/d/11VW0A2qsc4G-eBKSBTBrq-EhmrdWaXu2-s2IT78nVkE/viewform" target="_blank" rel="noopener">
                   <span lang="vi">ỨNG TUYỂN</span><span lang="en">APPLY</span>
                 </a>
@@ -181,7 +173,7 @@
                   <span class="job-row__meta-item">📅 Full time</span>
                   <span class="job-row__meta-item">Metropole (HCMC)</span>
                 </div>
-                <div class="job-row__salary">💵 15.000.000 — 18.000.000 VNĐ</div>
+                <div class="job-row__salary">💵 12.000.000 — 18.000.000 VNĐ</div>
                 <a class="btn-apply" href="https://docs.google.com/forms/d/1nAw4wNDP2bn6IZ4CUHIXXiBCLdFkOGk4gK3LfnBAQoo/viewform" target="_blank" rel="noopener">
                   <span lang="vi">ỨNG TUYỂN</span><span lang="en">APPLY</span>
                 </a>
@@ -192,7 +184,7 @@
                   <span class="job-row__meta-item">📅 Part time</span>
                   <span class="job-row__meta-item">Metropole (HCMC)</span>
                 </div>
-                <div class="job-row__salary">💵 30.000 VNĐ/giờ + phụ cấp</div>
+                <div class="job-row__salary">💵 28.000 — 30.000 VNĐ/giờ + phụ cấp</div>
                 <a class="btn-apply" href="https://docs.google.com/forms/d/1nAw4wNDP2bn6IZ4CUHIXXiBCLdFkOGk4gK3LfnBAQoo/viewform" target="_blank" rel="noopener">
                   <span lang="vi">ỨNG TUYỂN</span><span lang="en">APPLY</span>
                 </a>
@@ -222,10 +214,12 @@
           <h4><span lang="vi">Liên hệ với Tossful qua:</span><span lang="en">Get in touch with Tossful:</span></h4>
           <div class="footer-contact">
             <div>📧 <a href="mailto:tossful@gmail.com">tossful@gmail.com</a></div>
+            <div>📞 <a href="tel:+84918768982">0918 768 982</a></div>
           </div>
           <div class="footer-social">
             <a href="https://www.facebook.com/tossful" target="_blank" rel="noopener" aria-label="Facebook">f</a>
             <a href="https://www.instagram.com/tossful_" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+            <a href="https://www.linkedin.com/company/tossful" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
           </div>
         </div>
         <div class="footer-col">

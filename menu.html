@@ -14,41 +14,38 @@
 <body>
 
   <!-- ===== HEADER ===== -->
-  <header class="site-header">
+  <header class="site-header site-header--classic">
     <div class="site-header__inner">
-      <!-- LEFT: browse / discovery -->
-      <nav class="site-browse">
-        <a href="menu.html" class="is-active"><span lang="vi">Thực đơn</span><span lang="en">Menu</span></a>
-        <a href="about.html"><span lang="vi">Về Tossful</span><span lang="en">About</span></a>
-        <a href="news.html"><span lang="vi">Tin tức</span><span lang="en">News</span></a>
-      </nav>
-      <!-- CENTER: logo -> home -->
+      <!-- TCD mockup nav (2026-07-18): logo LEFT · 5 links · Đặt hàng + VI RIGHT.
+           Sweetgreen 3-col nav (TSK-125) parked for a future upgrade. -->
       <a class="site-header__logo" href="/">
         <img src="images/logo-lockup-white.svg" alt="Tossful">
       </a>
-      <!-- RIGHT: utility + CTA + lang + hamburger -->
+      <nav class="site-browse">
+        <a href="/"><span lang="vi">Trang chủ</span><span lang="en">Home</span></a>
+        <a href="about.html"><span lang="vi">Về Tossful</span><span lang="en">About</span></a>
+        <a href="menu.html" class="is-active"><span lang="vi">Thực đơn</span><span lang="en">Menu</span></a>
+        <a href="news.html"><span lang="vi">Tin tức</span><span lang="en">News</span></a>
+        <a href="careers.html"><span lang="vi">Tuyển dụng</span><span lang="en">Careers</span></a>
+      </nav>
       <div class="site-header__right">
-        <a href="https://my.tossful.com/nutrition" class="is-highlight">
-          <span lang="vi">Tính Calo</span><span lang="en">Calculator</span>
-          <span class="nav-badge"><span lang="vi">MỚI</span><span lang="en">NEW</span></span>
-        </a>
         <a class="btn btn-pink" href="https://beacons.ai/tossful" target="_blank" rel="noopener"><span lang="vi">Đặt hàng</span><span lang="en">Order</span></a>
         <button class="lang-switch" data-lang-toggle aria-label="Đổi ngôn ngữ / Change language">
           🌐 <span data-lang-label>VI</span>
         </button>
         <button class="menu-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Mở menu">☰</button>
       </div>
-      <!-- MOBILE drawer: full nav incl. Careers (toggled by hamburger) -->
+      <!-- MOBILE drawer -->
       <nav class="site-nav" id="site-nav">
         <a href="/"><span lang="vi">Trang chủ</span><span lang="en">Home</span></a>
-        <a href="menu.html" class="is-active"><span lang="vi">Thực đơn</span><span lang="en">Menu</span></a>
         <a href="about.html"><span lang="vi">Về Tossful</span><span lang="en">About</span></a>
+        <a href="menu.html" class="is-active"><span lang="vi">Thực đơn</span><span lang="en">Menu</span></a>
         <a href="news.html"><span lang="vi">Tin tức</span><span lang="en">News</span></a>
+        <a href="careers.html"><span lang="vi">Tuyển dụng</span><span lang="en">Careers</span></a>
         <a href="https://my.tossful.com/nutrition" class="is-highlight">
           <span lang="vi">Tính Calo</span><span lang="en">Calculator</span>
           <span class="nav-badge"><span lang="vi">MỚI</span><span lang="en">NEW</span></span>
         </a>
-        <a href="careers.html"><span lang="vi">Tuyển dụng</span><span lang="en">Careers</span></a>
       </nav>
     </div>
   </header>
@@ -79,13 +76,26 @@
         <div class="chef-grid">
           <article class="chef-card">
             <div class="chef-card__media">
-              <span class="chef-card__tag">TA DINING</span>
-              <img src="images/bowls/bowl-thai-me-up.jpg" alt="Thai Me Up" loading="lazy">
+              <span class="chef-card__tag">CHEF THẠCH TA · TA DINING</span>
+              <img src="images/bowls/bowl-thai-me-up.webp" alt="Thai Me Up" loading="lazy">
             </div>
             <h3 class="menu-item__name">Thai Me Up</h3>
             <p class="menu-item__desc">
               <span lang="vi">Cá diêu hồng, cơm gạo lứt, khoai lang nướng, hành phi, kale, salsa cà chua, lê, xốt Thái.</span>
               <span lang="en">Red tilapia, brown rice, roasted sweet potato, crispy shallots, kale, tomato salsa, pear, Thai dressing.</span>
+            </p>
+            <p class="menu-item__meta">488 Kcal · GF · DF</p>
+          </article>
+
+          <article class="chef-card">
+            <div class="chef-card__media">
+              <span class="chef-card__tag">CHEF THẠCH TA · TA DINING</span>
+              <img src="images/bowls/bowl-saigon-pearl.webp" alt="Saigon Pearl" loading="lazy">
+            </div>
+            <h3 class="menu-item__name">Saigon Pearl</h3>
+            <p class="menu-item__desc">
+              <span lang="vi">Thăn heo, chimichurri kiểu Việt, kale, khoai lang, bo bo (ý dĩ), trứng, dưa leo, súp lơ xanh.</span>
+              <span lang="en">Pork tenderloin, Vietnamese chimichurri, kale, sweet potato, Job's tears (pearl barley), egg, fresh cucumber, broccoli.</span>
             </p>
             <p class="menu-item__meta">488 Kcal · GF · DF</p>
           </article>
@@ -111,7 +121,7 @@
               <article class="menu-item">
                 <div class="menu-item__media">
                   <span class="tag">BEST SELLER</span>
-                  <img src="images/bowls/bowl-biet-dieu.jpg" alt="Biết Điều" loading="lazy">
+                  <img src="images/bowls/bowl-biet-dieu.webp" alt="Biết Điều" loading="lazy">
                 </div>
                 <h3 class="menu-item__name">Biết Điều</h3>
                 <p class="menu-item__desc">
@@ -124,7 +134,7 @@
               <article class="menu-item">
                 <div class="menu-item__media">
                   <span class="tag">BEST SELLER</span>
-                  <img src="images/bowls/bowl-kale-my-ex.jpg" alt="Kale My Ex, Please!" loading="lazy">
+                  <img src="images/bowls/bowl-kale-my-ex.webp" alt="Kale My Ex, Please!" loading="lazy">
                 </div>
                 <h3 class="menu-item__name">Kale My Ex, Please!</h3>
                 <p class="menu-item__desc">
@@ -137,7 +147,7 @@
               <article class="menu-item">
                 <div class="menu-item__media">
                   <span class="tag">BEST SELLER</span>
-                  <img src="images/bowls/bowl-fennel-fling.jpg" alt="Fennel Fling" loading="lazy">
+                  <img src="images/bowls/bowl-fennel-fling.webp" alt="Fennel Fling" loading="lazy">
                 </div>
                 <h3 class="menu-item__name">Fennel Fling</h3>
                 <p class="menu-item__desc">
@@ -149,7 +159,7 @@
 
               <article class="menu-item">
                 <div class="menu-item__media">
-                  <img src="images/bowls/bowl-festo.jpg" alt="Festo" loading="lazy">
+                  <img src="images/bowls/bowl-festo.webp" alt="Festo" loading="lazy">
                 </div>
                 <h3 class="menu-item__name">Festo</h3>
                 <p class="menu-item__desc">
@@ -161,7 +171,7 @@
 
               <article class="menu-item">
                 <div class="menu-item__media">
-                  <img src="images/bowls/bowl-dijon-vu.jpg" alt="Dijon Vu" loading="lazy">
+                  <img src="images/bowls/bowl-dijon-vu.webp" alt="Dijon Vu" loading="lazy">
                 </div>
                 <h3 class="menu-item__name">Dijon Vu</h3>
                 <p class="menu-item__desc">
@@ -173,7 +183,7 @@
 
               <article class="menu-item">
                 <div class="menu-item__media">
-                  <img src="images/bowls/bowl-misocool.jpg" alt="Mi-so-cool" loading="lazy">
+                  <img src="images/bowls/bowl-misocool.webp" alt="Mi-so-cool" loading="lazy">
                 </div>
                 <h3 class="menu-item__name">Mi-so-cool</h3>
                 <p class="menu-item__desc">
@@ -186,7 +196,7 @@
               <article class="menu-item">
                 <div class="menu-item__media">
                   <span class="tag tag--vegan">VEGAN</span>
-                  <img src="images/bowls/bowl-shroomami.jpg" alt="Shroomami" loading="lazy">
+                  <img src="images/bowls/bowl-shroomami.webp" alt="Shroomami" loading="lazy">
                 </div>
                 <h3 class="menu-item__name">Shroomami</h3>
                 <p class="menu-item__desc">
@@ -201,16 +211,93 @@
 
           <div class="tab-panel" data-tab-panel-group="ansan" data-tab-panel="wrap">
             <div class="menu-grid">
+
               <article class="menu-item">
-                <div class="menu-item__media" style="font-size:14px;opacity:0.55;">
-                  <span><span lang="vi">Wrap sắp ra mắt</span><span lang="en">Wraps coming soon</span></span>
+                <div class="menu-item__media">
+                  <span class="tag">BEST SELLER</span>
+                  <img src="images/wraps/wrap-biet-dieu.webp" alt="Biết Điều Wrap" loading="lazy">
                 </div>
-                <h3 class="menu-item__name"><span lang="vi">Đang lên ý tưởng</span><span lang="en">In development</span></h3>
+                <h3 class="menu-item__name">Biết Điều</h3>
                 <p class="menu-item__desc">
-                  <span lang="vi">Quay lại sớm — chúng tôi đang thử nghiệm vài lựa chọn wrap thú vị.</span>
-                  <span lang="en">Check back soon — we're testing a few exciting wrap options.</span>
+                  <span lang="vi">Cơm bông cải trắng, cà chua bi, đậu lăng xanh, bắp cải muối, bí đỏ & khoai lang nướng, mix hạt nướng, húng tây, đùi gà nướng Paprika, xốt hạt điều cay.</span>
+                  <span lang="en">Cauliflower rice, baby tomatoes, green lentils, pickled cabbage, roasted pumpkin & sweet potato, mixed seeds, basil, paprika chicken thigh, spicy cashew dressing.</span>
                 </p>
+                <p class="menu-item__meta">488 Kcal · GF · DF</p>
               </article>
+
+              <article class="menu-item">
+                <div class="menu-item__media">
+                  <img src="images/wraps/wrap-kale-my-ex.webp" alt="Kale My Ex, Please! Wrap" loading="lazy">
+                </div>
+                <h3 class="menu-item__name">Kale My Ex, Please!</h3>
+                <p class="menu-item__desc">
+                  <span lang="vi">Xà lách Romaine, rau cải xoăn — kale, cà chua bi, ngô nướng paprika, bánh mì đen giòn, ức gà nướng, parmesan bào, xốt caesar.</span>
+                  <span lang="en">Romaine, kale, baby tomatoes, paprika-roasted corn, crispy dark bread, grilled chicken breast, shaved parmesan, Caesar dressing.</span>
+                </p>
+                <p class="menu-item__meta">461 Kcal</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="menu-item__media">
+                  <img src="images/wraps/wrap-fennel-fling.webp" alt="Fennel Fling Wrap" loading="lazy">
+                </div>
+                <h3 class="menu-item__name">Fennel Fling</h3>
+                <p class="menu-item__desc">
+                  <span lang="vi">Xà lách Romaine, rau rocket, dưa chuột, ngô nướng paprika, edamame, bánh mì đen giòn, tôm nướng paprika, xốt Olive tiểu hồi.</span>
+                  <span lang="en">Romaine, rocket, cucumber, paprika-roasted corn, edamame, crispy dark bread, paprika prawns, fennel olive dressing.</span>
+                </p>
+                <p class="menu-item__meta">449 Kcal · DF</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="menu-item__media">
+                  <img src="images/wraps/wrap-festo.webp" alt="Festo Wrap" loading="lazy">
+                </div>
+                <h3 class="menu-item__name">Festo</h3>
+                <p class="menu-item__desc">
+                  <span lang="vi">Rau chân vịt, hạt diêm mạch — quinoa, cà chua bi, súp lơ xanh nướng, bánh mì đen giòn, ức gà nướng, parmesan nướng giòn, xốt pesto & xốt ớt nhà làm.</span>
+                  <span lang="en">Spinach, quinoa, baby tomatoes, roasted broccoli, crispy dark bread, grilled chicken breast, crisp parmesan, pesto & house chili sauce.</span>
+                </p>
+                <p class="menu-item__meta">437 Kcal</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="menu-item__media">
+                  <img src="images/wraps/wrap-dijon-vu.webp" alt="Dijon Vu Wrap" loading="lazy">
+                </div>
+                <h3 class="menu-item__name">Dijon Vu</h3>
+                <p class="menu-item__desc">
+                  <span lang="vi">Rau rocket, cà chua bi, hạt diêm mạch — quinoa, bí đỏ & khoai lang nướng, dưa chuột, bắp cải muối, hạnh nhân nướng, đùi gà nướng Paprika, phô mai Feta, xốt quất mật ong mù tạt.</span>
+                  <span lang="en">Rocket, baby tomatoes, quinoa, roasted pumpkin & sweet potato, cucumber, pickled cabbage, roasted almonds, paprika chicken thigh, feta, kumquat honey mustard.</span>
+                </p>
+                <p class="menu-item__meta">530 Kcal · GF</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="menu-item__media">
+                  <img src="images/wraps/wrap-misocool.webp" alt="Mi-so-cool Wrap" loading="lazy">
+                </div>
+                <h3 class="menu-item__name">Mi-so-cool</h3>
+                <p class="menu-item__desc">
+                  <span lang="vi">Rau cải xoăn — kale, cơm gạo lứt, edamame, ngô nướng paprika, bắp cải muối, súp lơ xanh nướng, củ dền muối, hạnh nhân nướng, cá hồi Nauy nướng, xốt miso gừng mè.</span>
+                  <span lang="en">Kale, brown rice, edamame, paprika-roasted corn, pickled cabbage, roasted broccoli, salted beetroot, roasted almonds, Norwegian salmon, miso ginger sesame.</span>
+                </p>
+                <p class="menu-item__meta">575 Kcal</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="menu-item__media">
+                  <span class="tag tag--vegan">VEGAN</span>
+                  <img src="images/wraps/wrap-shroomami.webp" alt="Shroomami Wrap" loading="lazy">
+                </div>
+                <h3 class="menu-item__name">Shroomami</h3>
+                <p class="menu-item__desc">
+                  <span lang="vi">Rau cải xoăn — kale, cơm gạo lứt, húng tây, dưa chuột, củ dền muối, mix hạt nướng, nấm xào, đậu phụ nướng mè, xốt miso gừng mè.</span>
+                  <span lang="en">Kale, brown rice, basil, cucumber, salted beetroot, mixed seeds, sautéed mushrooms, sesame tofu, miso ginger sesame.</span>
+                </p>
+                <p class="menu-item__meta">443 Kcal · V · DF</p>
+              </article>
+
             </div>
           </div>
         </div>
@@ -225,45 +312,45 @@
         <div class="menu-grid menu-grid--drinks">
           <article class="menu-item">
             <div class="menu-item__media">
-              <img src="images/ingredients/kumquat_honey_mustard.jpg" alt="I'm Alive Kombucha" loading="lazy">
+              <img src="images/drinks/home-drink-2.webp" alt="I'm Alive Kombucha" loading="lazy">
             </div>
             <h3 class="menu-item__name">I'm Alive Kombucha</h3>
             <p class="menu-item__desc">
-              <span lang="vi">Nước kombu lên men tự nhiên, vị thanh, hậu chua nhẹ. Vị nguyên bản, Lựu cà, Cherry chanh hồng, Gừng thanh long.</span>
-              <span lang="en">Naturally fermented kombucha — bright, lightly tart. Original, Pomegranate, Cherry lime, Ginger dragonfruit.</span>
+              <span lang="vi">"Nhập khẩu từ Hàn Quốc, được làm từ lá trà xanh, trà đen & hoa quả organic. Vị: Nguyên bản, Lựu đỏ, Cherry chanh vàng, Gừng chanh vàng."</span>
+              <span lang="en">Imported from Korea — brewed from green & black tea with organic fruit. Flavors: Original, Pomegranate, Cherry yuzu, Ginger lemon.</span>
             </p>
           </article>
 
           <article class="menu-item">
             <div class="menu-item__media">
-              <img src="images/ingredients/beetroot.jpg" alt="Trà Atiso Đỏ" loading="lazy">
+              <img src="images/drinks/tra-atiso-do.webp" alt="Trà Atiso Đỏ" loading="lazy">
             </div>
             <h3 class="menu-item__name">Trà Atiso Đỏ</h3>
             <p class="menu-item__desc">
-              <span lang="vi">Sự kết hợp hoàn hảo của trà atiso đỏ và gừng giàu chất chống oxy hóa giúp thanh nhiệt, làm mát cơ thể và tốt cho sức khỏe.</span>
-              <span lang="en">Hibiscus + ginger — antioxidant-rich, cooling, and refreshing.</span>
+              <span lang="vi">Sự kết hợp hoàn hảo giữa vị chua thanh sảng khoái và hậu vị ngọt nhẹ tự nhiên, giúp thanh nhiệt, làm mới vị giác và giàu chất chống oxy hóa.</span>
+              <span lang="en">A perfect balance of bright tartness and a naturally sweet finish — cooling, refreshing and antioxidant-rich.</span>
             </p>
           </article>
 
           <article class="menu-item">
             <div class="menu-item__media">
-              <img src="images/ingredients/baby_tomatoes.jpg" alt="Ép Dưa Hấu" loading="lazy">
+              <img src="images/drinks/ep-dua-hau.webp" alt="Ép Dưa Hấu" loading="lazy">
             </div>
             <h3 class="menu-item__name">Ép Dưa Hấu</h3>
             <p class="menu-item__desc">
-              <span lang="vi">100% nguyên chất Sóc Trăng. Mát lành, đầy hương vị.</span>
-              <span lang="en">100% pure Sóc Trăng watermelon — cool, sweet, refreshing.</span>
+              <span lang="vi">100% nguyên chất từ dưa hấu tươi, giữ trọn vẹn vị ngọt mát lành.</span>
+              <span lang="en">100% fresh watermelon — pure, cool, naturally sweet.</span>
             </p>
           </article>
 
           <article class="menu-item">
             <div class="menu-item__media">
-              <img src="images/ingredients/green_lettuce.jpg" alt="Ép Ổi" loading="lazy">
+              <img src="images/drinks/ep-oi.webp" alt="Ép Ổi" loading="lazy">
             </div>
             <h3 class="menu-item__name">Ép Ổi</h3>
             <p class="menu-item__desc">
-              <span lang="vi">Nguồn Vitamin C dồi dào nuôi dưỡng quả ổi tươi tuyển chọn, mang lại hương vị tinh khôi và ngọt tự nhiên.</span>
-              <span lang="en">Vitamin-C-rich guava juice — fresh, bright, naturally sweet.</span>
+              <span lang="vi">Nguồn Vitamin C dồi dào từ những quả ổi tươi tuyển chọn, mang đến hương vị thơm nồng đặc trưng và vị ngọt dịu nhẹ.</span>
+              <span lang="en">Vitamin-C-rich juice from hand-picked guavas — fragrant, gently sweet.</span>
             </p>
           </article>
         </div>
@@ -278,12 +365,12 @@
         <div class="menu-grid">
           <article class="menu-item">
             <div class="menu-item__media">
-              <img src="images/sides/guacamole-chips.jpg" alt="Oven-Baked Chicken Popcorn" loading="lazy">
+              <img src="images/sides/oven-baked-popcorn.webp" alt="Oven-Baked Chicken Popcorn" loading="lazy">
             </div>
             <h3 class="menu-item__name">Oven-Baked Chicken Popcorn</h3>
             <p class="menu-item__desc">
-              <span lang="vi">Bao viên chiên xốp giòn rụm tẩm vị xốt ngon, ăn vặt cực thoả mãn.</span>
-              <span lang="en">Crispy oven-baked chicken popcorn — savory, snack-worthy bites.</span>
+              <span lang="vi">Gà viên chiên không dầu (Giảm 95% dầu mỡ so với gà rán thông thường).</span>
+              <span lang="en">Oven-baked chicken popcorn — 95% less oil than regular fried chicken.</span>
             </p>
           </article>
 
@@ -320,10 +407,12 @@
           <h4><span lang="vi">Liên hệ với Tossful qua:</span><span lang="en">Get in touch with Tossful:</span></h4>
           <div class="footer-contact">
             <div>📧 <a href="mailto:tossful@gmail.com">tossful@gmail.com</a></div>
+            <div>📞 <a href="tel:+84918768982">0918 768 982</a></div>
           </div>
           <div class="footer-social">
             <a href="https://www.facebook.com/tossful" target="_blank" rel="noopener" aria-label="Facebook">f</a>
             <a href="https://www.instagram.com/tossful_" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+            <a href="https://www.linkedin.com/company/tossful" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
           </div>
         </div>
         <div class="footer-col">
