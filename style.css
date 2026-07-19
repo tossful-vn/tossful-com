@@ -1020,3 +1020,68 @@ html[lang="en"] [lang="vi"] { display: none !important; }
 /* ----- Careers: single grid image hero (Tuyển dụng a) ----- */
 .careers-collage--single { display: block; height: auto; }
 .careers-collage--single img { width: 100%; height: auto; display: block; }
+
+
+/* =========================================================================
+   DIFF-REVIEW ROUND 2 — 2026-07-19 (Hieu duyệt all #1–#12)
+   ========================================================================= */
+
+/* #1 Home card titles: Questrial bold (mockup) — menu page giữ Fraunces */
+.bowl-card__title {
+  font-family: var(--font-body); font-style: normal; font-weight: 700;
+  letter-spacing: 0.01em; font-size: 22px;
+}
+
+/* #2 Home tabs section: nền trắng theo mockup */
+.menu-preview { background: var(--toss-white); }
+
+/* #3 Hero service titles: hồng nhạt theo mockup */
+.hero__service-title { color: var(--toss-beetroot); }
+
+/* #4 Feedback photo polaroids: nghiêng + xen kẽ */
+.polaroid--photo-1 { --tilt: -6deg; margin-top: -6px; }
+.polaroid--photo-2 { --tilt: 5deg; margin-top: 18px; }
+
+/* #5 Sauce section: nền giấy texture */
+.sauces {
+  background: #F6F3E8 url('images/about/bg-lam-moi.webp') center / cover no-repeat;
+}
+
+/* #6 Menu items: đường kẻ mảnh giữa mô tả và kcal */
+.menu-item__meta::before {
+  content: ''; display: block; width: 150px; max-width: 60%;
+  border-top: 1px solid var(--toss-kale); opacity: 0.5; margin: 2px 0 8px;
+}
+
+/* #7 Careers tab active: đỏ đô theo mockup */
+.careers-tab[aria-selected="true"] { background: var(--toss-almond) !important; color: var(--toss-white); }
+
+/* #8 Careers meta icons */
+.job-ico {
+  display: inline-flex; width: 18px; height: 18px; vertical-align: -3px;
+  margin-right: 6px; color: var(--toss-kale);
+}
+.job-ico svg { width: 100%; height: 100%; }
+
+/* #11 About timeline connector */
+.about-timeline .container { position: relative; }
+.timeline-connector {
+  position: absolute; left: 50%; top: 12%; height: 74%; width: 120px;
+  transform: translateX(-50%); z-index: 0; pointer-events: none; color: var(--toss-kale); opacity: 0.55;
+}
+.timeline-item { position: relative; z-index: 1; }
+@media (max-width: 760px) { .timeline-connector { display: none; } }
+
+/* #12 News hero carousel */
+.news-feature { position: relative; }
+.news-feature__slide { display: none; }
+.news-feature__slide.is-active { display: contents; }
+.news-feature__dots {
+  position: absolute; right: 18px; top: 50%; transform: translateY(-50%);
+  display: flex; flex-direction: column; gap: 10px; z-index: 3;
+}
+.news-feature__dot {
+  width: 10px; height: 10px; border-radius: 50%; border: 0; padding: 0;
+  background: rgba(255,255,255,0.45); cursor: pointer;
+}
+.news-feature__dot.is-active { background: var(--toss-white); }

@@ -97,6 +97,28 @@
      ============================================================ */
 
   /* ============================================================
+     5b. News featured carousel (2026-07-19, diff-review #12)
+     ============================================================ */
+  var newsCar = document.querySelector('[data-news-carousel]');
+  if (newsCar) {
+    var slides = newsCar.querySelectorAll('[data-news-slide]');
+    var dots = newsCar.querySelectorAll('[data-news-dot]');
+    var cur = 0, timer = null;
+    function showSlide(i) {
+      cur = i;
+      slides.forEach(function (s) { s.classList.toggle('is-active', s.dataset.newsSlide == i); });
+      dots.forEach(function (d) { d.classList.toggle('is-active', d.dataset.newsDot == i); });
+    }
+    dots.forEach(function (d) {
+      d.addEventListener('click', function () {
+        showSlide(parseInt(d.dataset.newsDot, 10));
+        if (timer) { clearInterval(timer); timer = null; }
+      });
+    });
+    timer = setInterval(function () { showSlide((cur + 1) % slides.length); }, 6000);
+  }
+
+  /* ============================================================
      6. Soft-opening popup — re-enabled 2026-07-18 per TCD marketing
      package (Hieu approved). Static promo image -> beacons.ai; shown
      once per browser session. The Phase-2 signup→voucher popup remains
