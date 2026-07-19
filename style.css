@@ -1215,3 +1215,60 @@ body { font-size: clamp(14px, 0.9vw, 18px); }
 .sauce-cup--5 { top: 44%;  right: 0; }
 .sauce-cup--6 { bottom: 3%; left: 19%; }
 .sauce-cup--7 { bottom: 3%; right: 20%; }
+
+
+/* =========================================================================
+   SPRINT TOS-218 — 2026-07-19 (mobile review Hieu)
+   #1 Sốt: layout mobile riêng (không absolute) · #5 timeline connector
+   bản dọc trên mobile.
+   ========================================================================= */
+
+/* #1 — Sauce section mobile: center text lên đầu, hũ thành grid 2 cột */
+@media (max-width: 800px) {
+  .sauce-mandala {
+    aspect-ratio: auto; max-width: none;
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 18px 10px; padding-bottom: 8px;
+  }
+  .sauce-mandala__center {
+    position: static; transform: none; grid-column: 1 / -1;
+    max-width: 480px; margin: 0 auto 8px; order: -1;
+  }
+  .sauce-cup,
+  .sauce-cup--1, .sauce-cup--2, .sauce-cup--3, .sauce-cup--4,
+  .sauce-cup--5, .sauce-cup--6, .sauce-cup--7 {
+    position: static; transform: none; inset: auto;
+  }
+  .sauce-cup img { width: min(38vw, 170px); }
+  .sauce-cup--1 { grid-column: 1 / -1; }
+  .sauce-cup--1 img { width: min(44vw, 200px); }
+}
+
+/* #5 — Timeline connector mobile: đường chấm dọc bên trái (CSS thuần,
+   không dùng thuộc tính d — Safari iOS chưa hỗ trợ ổn định) */
+@media (max-width: 760px) {
+  .about-timeline .container { padding-left: 46px; position: relative; }
+  .about-timeline .container::before {
+    content: ''; position: absolute; left: 22px; top: 30px; bottom: 30px;
+    border-left: 3px dotted var(--toss-kale); opacity: 0.6;
+  }
+  .about-timeline .container::after {
+    content: ''; position: absolute; left: 15px; top: 12px;
+    width: 17px; height: 17px; border-radius: 50%; background: var(--toss-kale);
+  }
+  .timeline-item::before {
+    content: ''; position: absolute; left: -31px; top: 14px;
+    width: 17px; height: 17px; border-radius: 50%; background: var(--toss-squash);
+  }
+}
+
+
+/* SPRINT TOS-218 #6 — placeholder cho món chưa có ảnh đúng (Kale My Ex wrap) */
+.media-pending {
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  width: 100%; height: 100%; min-height: 200px;
+  background: repeating-linear-gradient(135deg, #F1EEE2, #F1EEE2 14px, #ECE8D8 14px, #ECE8D8 28px);
+  color: var(--toss-kale); font-family: var(--font-head); font-style: italic;
+  font-size: clamp(15px, 1.1vw, 20px); opacity: 0.75; border-radius: inherit;
+}
+.menu-item__media .media-pending { position: absolute; inset: 0; }
