@@ -1272,3 +1272,11 @@ body { font-size: clamp(14px, 0.9vw, 18px); }
   font-size: clamp(15px, 1.1vw, 20px); opacity: 0.75; border-radius: inherit;
 }
 .menu-item__media .media-pending { position: absolute; inset: 0; }
+
+
+/* SPRINT TOS-218 follow-up (2026-07-19): hero arrows removed (auto-advance
+   only); tab headlines fit one row on mobile. */
+@media (max-width: 560px) {
+  .tab-headlines { gap: 16px; flex-wrap: nowrap; justify-content: space-between; }
+  .tab-headline { font-size: clamp(17px, 5.2vw, 24px); white-space: nowrap; }
+}
