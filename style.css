@@ -1085,3 +1085,133 @@ html[lang="en"] [lang="vi"] { display: none !important; }
   background: rgba(255,255,255,0.45); cursor: pointer;
 }
 .news-feature__dot.is-active { background: var(--toss-white); }
+
+
+/* =========================================================================
+   ROUND 3 — MOCKUP FIDELITY PASS (2026-07-19, Hieu review trên live)
+   1) Typography scale theo đúng khổ thiết kế 2000px của TCD (vw-based,
+      clamp giữ mobile an toàn) — trước đây font cố định nên màn to bị nhỏ
+      hơn mockup.
+   2) Section sốt: bỏ crop tròn (hiện nguyên hũ + bóng đổ như mockup),
+      nền giấy trắng, hũ to đúng tỷ lệ.
+   3) Careers/Menu: nền sáng như mockup, icon tròn đặc, separator đậm.
+   ========================================================================= */
+
+/* ---------- 1. Typography scale (mockup px / 2000 * 100vw) ---------- */
+body { font-size: clamp(14px, 0.9vw, 18px); }
+.announce__track { font-size: clamp(13px, 0.95vw, 19px); }
+.site-browse, .site-nav { font-size: clamp(12px, 0.8vw, 16px); }
+.site-header--classic .site-browse { font-size: clamp(12px, 0.75vw, 15px); }
+
+.hero__eyebrow { font-size: clamp(11px, 0.8vw, 16px); }
+.hero__service-title { font-size: clamp(34px, 3.2vw, 64px); }
+.hero__service-text { font-size: clamp(13px, 0.9vw, 18px); max-width: 42ch; }
+.hero__tag { font-size: clamp(13px, 0.9vw, 18px); }
+
+.tab-headline { font-size: clamp(30px, 3vw, 60px); }
+.subtab-btn { font-size: clamp(13px, 0.85vw, 17px); padding: 8px 22px; }
+.bowl-card__title { font-size: clamp(18px, 1.3vw, 26px); }
+.bowl-card__desc { font-size: clamp(13px, 0.85vw, 17px); }
+.bowl-card__meta { font-size: clamp(12px, 0.8vw, 16px); }
+.bowl-card__cta { font-size: clamp(11px, 0.75vw, 15px); }
+
+.reviews__lead h2 { font-size: clamp(40px, 5.2vw, 104px); }
+.reviews__lead .badge { font-size: clamp(12px, 0.85vw, 17px); }
+.polaroid { font-size: clamp(12px, 0.8vw, 16px); }
+
+.byo__title { font-size: clamp(48px, 6vw, 120px); }
+.byo-step__name { font-size: clamp(24px, 2.2vw, 44px); }
+.byo-step__price { font-size: clamp(16px, 1.1vw, 22px); }
+.byo-step__desc { font-size: clamp(12px, 0.8vw, 16px); }
+
+.calc-teaser__title { font-size: clamp(26px, 2.2vw, 44px); }
+.calc-teaser__sub { font-size: clamp(13px, 0.85vw, 17px); }
+
+.sauce-mandala__title { font-size: clamp(30px, 2.6vw, 52px); }
+.sauce-mandala__points { font-size: clamp(12px, 0.85vw, 17px); }
+.sauce-cup__name { font-size: clamp(14px, 1.1vw, 22px); }
+
+.menu-banner__text { font-size: clamp(20px, 1.6vw, 32px); max-width: 52ch; }
+.menu-section__title { font-size: clamp(36px, 4.4vw, 88px); }
+.menu-item__name { font-size: clamp(22px, 1.7vw, 34px); }
+.menu-item__desc { font-size: clamp(13px, 0.95vw, 19px); }
+.menu-item__meta { font-size: clamp(12px, 0.9vw, 18px); }
+.menu-subtab { font-size: clamp(13px, 0.85vw, 17px); padding: 8px 24px; }
+.chef-card__tag, .menu-item__media .tag, .bowl-card__tag { font-size: clamp(10px, 0.7vw, 14px); }
+
+.about-hero__title { font-size: clamp(44px, 4.6vw, 92px); }
+.about-hero__sub { font-size: clamp(15px, 1.1vw, 22px); }
+.timeline-item__title { font-size: clamp(28px, 2.4vw, 48px); }
+.timeline-item__date { font-size: clamp(13px, 1vw, 20px); padding: 5px 16px; }
+.feature-row__title { font-size: clamp(28px, 2.2vw, 44px); }
+.feature-row__body { font-size: clamp(13px, 0.9vw, 18px); max-width: 48ch; }
+.feature-row__eyebrow { font-size: clamp(11px, 0.7vw, 14px); }
+
+.news-feature__title { font-size: clamp(28px, 2.8vw, 56px); }
+.news-feature__body { font-size: clamp(13px, 0.9vw, 18px); }
+.news-card__title { font-size: clamp(16px, 1.15vw, 23px); }
+.news-card__excerpt { font-size: clamp(13px, 0.85vw, 17px); }
+.news-tab { font-size: clamp(12px, 0.85vw, 17px); }
+
+.careers-section__title { font-size: clamp(32px, 3vw, 60px); }
+.careers-tab { font-size: clamp(12px, 0.9vw, 18px); padding: 8px 20px; }
+.job-row__title { font-size: clamp(18px, 2vw, 40px); letter-spacing: 0.02em; }
+.job-row__meta-item, .job-row__salary { font-size: clamp(12px, 0.85vw, 17px); }
+.btn-apply { font-size: clamp(11px, 0.8vw, 16px); padding: 10px 26px; }
+
+.footer-col h4 { font-size: clamp(13px, 0.85vw, 17px); }
+.footer-contact, .footer-stores, .footer-hours { font-size: clamp(13px, 0.8vw, 16px); }
+.footer-bottom { font-size: clamp(11px, 0.7vw, 14px); }
+
+/* ---------- 2. Section sốt: nguyên hũ, nền giấy trắng ---------- */
+.sauces {
+  background-color: #FBFAF6;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.55 0 0 0 0 0.53 0 0 0 0 0.48 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.sauce-mandala { max-width: 1560px; aspect-ratio: 1.35 / 1; }
+.sauce-mandala__center { max-width: clamp(320px, 34vw, 560px); }
+.sauce-cup img {
+  width: clamp(150px, 16vw, 330px); aspect-ratio: auto; height: auto;
+  border-radius: 0; object-fit: contain; background: transparent; margin-bottom: 4px;
+}
+.sauce-cup--1 { top: -3%;  left: 41%; }
+.sauce-cup--2 { top: 9%;   left: 9%; }
+.sauce-cup--3 { top: 9%;   right: 8%; }
+.sauce-cup--4 { top: 44%;  left: 2%; }
+.sauce-cup--5 { top: 46%;  right: 2%; }
+.sauce-cup--6 { bottom: 2%; left: 23%; }
+.sauce-cup--7 { bottom: 2%; right: 23%; }
+@media (max-width: 800px) {
+  .sauce-cup img { width: 120px; }
+}
+
+/* ---------- 3. Nền sáng + chi tiết theo mockup ---------- */
+.menu-section { background: #FAF9F3; }
+.menu-banner {
+  background-image:
+    linear-gradient(180deg, rgba(10,62,44,0.82) 0%, rgba(10,62,44,0.74) 100%),
+    url('images/hero/menu-hero.webp');
+}
+.careers-section { background: #FAF9F3; }
+.job-row { border-bottom: 1.5px solid rgba(15,86,61,0.5); padding-bottom: 18px; }
+.job-ico {
+  width: clamp(18px, 1.1vw, 22px); height: clamp(18px, 1.1vw, 22px);
+  background: var(--toss-kale); border-radius: 50%; color: var(--toss-white);
+  padding: 3px; box-sizing: border-box;
+}
+.timeline-connector path { stroke-dasharray: none; stroke-width: 3; }
+.timeline-connector { opacity: 0.85; }
+
+
+/* Round 3b — content width theo khổ mockup (1740/2000 = 87vw) + sốt hết đè */
+:root { --max-w: min(1740px, 92vw); }
+.sauce-mandala { max-width: 1500px; aspect-ratio: 1.25 / 1; }
+.sauce-mandala__center { max-width: clamp(320px, 30vw, 500px); }
+.sauce-cup img { width: clamp(140px, 14.5vw, 300px); }
+.sauce-cup--1 { top: -2%;  left: 50%; transform: translateX(-50%); }
+.sauce-cup--2 { top: 7%;   left: 5%; }
+.sauce-cup--3 { top: 7%;   right: 4%; }
+.sauce-cup--4 { top: 42%;  left: 0; }
+.sauce-cup--5 { top: 44%;  right: 0; }
+.sauce-cup--6 { bottom: 3%; left: 19%; }
+.sauce-cup--7 { bottom: 3%; right: 20%; }
