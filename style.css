@@ -916,6 +916,14 @@ html[lang="en"] [lang="vi"] { display: none !important; }
 .polaroid--photo { background: transparent; box-shadow: none; padding: 0; }
 .polaroid--photo img { width: 100%; height: auto; display: block; }
 
+/* ----- The Tossful Club KOL posters (feedback section, 2026-07-20) ----- */
+.polaroid--club { align-self: start; }
+.polaroid--club img { border-radius: 14px; box-shadow: 0 12px 34px rgba(10, 62, 44, 0.18); }
+
+/* ----- Poster-style menu media (Their vs Our popcorn) — show full artwork ----- */
+.menu-item__media--poster { background: var(--toss-cabbage); }
+.menu-item__media--poster img { object-fit: contain; }
+
 /* ----- Popup (Soft Opening — per TCD package) ----- */
 .popup { position: fixed; inset: 0; z-index: 200; display: flex; align-items: center; justify-content: center; }
 .popup[hidden] { display: none; }
