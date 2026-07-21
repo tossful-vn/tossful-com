@@ -1,0 +1,251 @@
+{
+  "_meta": {
+    "source": "Supabase Tossful · v_menu_published",
+    "generated": "2026-07-21",
+    "note": "Published per-serving kcal. Master = Supabase items.published_kcal. Do not edit by hand — run `nutrition sync`."
+  },
+  "items": [
+    {
+      "key": "bowl:biet-ieu",
+      "type": "bowl",
+      "name_en": "Biết Điều",
+      "name_vn": null,
+      "kcal": 488,
+      "diet": "GF, DF",
+      "serving": null,
+      "best_seller": true,
+      "source": "package_tcd"
+    },
+    {
+      "key": "bowl:dijon-vu",
+      "type": "bowl",
+      "name_en": "Dijon Vu",
+      "name_vn": null,
+      "kcal": 530,
+      "diet": "GF",
+      "serving": null,
+      "best_seller": false,
+      "source": "package_tcd"
+    },
+    {
+      "key": "bowl:fennel-fling",
+      "type": "bowl",
+      "name_en": "Fennel Fling",
+      "name_vn": null,
+      "kcal": 449,
+      "diet": "DF",
+      "serving": null,
+      "best_seller": true,
+      "source": "package_tcd"
+    },
+    {
+      "key": "bowl:festo",
+      "type": "bowl",
+      "name_en": "Festo",
+      "name_vn": null,
+      "kcal": 437,
+      "diet": null,
+      "serving": null,
+      "best_seller": false,
+      "source": "package_tcd"
+    },
+    {
+      "key": "bowl:kale-my-ex-please",
+      "type": "bowl",
+      "name_en": "Kale My Ex, Please!",
+      "name_vn": null,
+      "kcal": 461,
+      "diet": null,
+      "serving": null,
+      "best_seller": false,
+      "source": "package_tcd"
+    },
+    {
+      "key": "bowl:mi-so-cool",
+      "type": "bowl",
+      "name_en": "Mi-So-Cool",
+      "name_vn": null,
+      "kcal": 575,
+      "diet": null,
+      "serving": null,
+      "best_seller": true,
+      "source": "package_tcd"
+    },
+    {
+      "key": "bowl:shroomami",
+      "type": "bowl",
+      "name_en": "Shroomami",
+      "name_vn": "Shroomami",
+      "kcal": 443,
+      "diet": "V, DF",
+      "serving": null,
+      "best_seller": false,
+      "source": "package_tcd"
+    },
+    {
+      "key": "bowl:thai-me-up",
+      "type": "bowl",
+      "name_en": "Thai Me Up",
+      "name_vn": null,
+      "kcal": 488,
+      "diet": "GF, DF",
+      "serving": null,
+      "best_seller": false,
+      "source": "package_tcd"
+    },
+    {
+      "key": "drink:cold-pressed-guava",
+      "type": "drink",
+      "name_en": "Cold-Pressed Guava",
+      "name_vn": "Nước ép chậm - Ổi",
+      "kcal": 80,
+      "diet": null,
+      "serving": "300 ml",
+      "best_seller": false,
+      "source": "ipos_confirmed"
+    },
+    {
+      "key": "drink:cold-pressed-watermelon",
+      "type": "drink",
+      "name_en": "Cold-Pressed Watermelon",
+      "name_vn": "Nước ép chậm Dưa Hấu",
+      "kcal": 70,
+      "diet": null,
+      "serving": "300 ml",
+      "best_seller": false,
+      "source": "ipos_confirmed"
+    },
+    {
+      "key": "drink:fuwokcha-kombucha-lychee",
+      "type": "drink",
+      "name_en": "FuwokCha Kombucha — Lychee",
+      "name_vn": "Kombucha Vải",
+      "kcal": 118,
+      "diet": null,
+      "serving": "250 ml",
+      "best_seller": false,
+      "source": "supplier_label"
+    },
+    {
+      "key": "drink:fuwokcha-kombucha-mango",
+      "type": "drink",
+      "name_en": "FuwokCha Kombucha — Mango",
+      "name_vn": "Kombucha Xoài",
+      "kcal": 90,
+      "diet": null,
+      "serving": "250 ml",
+      "best_seller": false,
+      "source": "supplier_label"
+    },
+    {
+      "key": "drink:fuwokcha-kombucha-passion-fruit",
+      "type": "drink",
+      "name_en": "FuwokCha Kombucha — Passion Fruit",
+      "name_vn": "Kombucha Chanh dây",
+      "kcal": 108,
+      "diet": null,
+      "serving": "250 ml",
+      "best_seller": false,
+      "source": "supplier_label"
+    },
+    {
+      "key": "drink:house-made-hibiscus-cold-brew",
+      "type": "drink",
+      "name_en": "House-Made Hibiscus Cold-Brew",
+      "name_vn": "Trà Hibiscus Cold-Brew (ủ 36 tiếng) nhà làm",
+      "kcal": 0,
+      "diet": null,
+      "serving": null,
+      "best_seller": false,
+      "source": "ipos_confirmed"
+    },
+    {
+      "key": "wrap:biet-ieu",
+      "type": "wrap",
+      "name_en": "Biết Điều - Wrap",
+      "name_vn": null,
+      "kcal": 488,
+      "diet": "GF, DF",
+      "serving": null,
+      "best_seller": false,
+      "source": "package_tcd"
+    },
+    {
+      "key": "wrap:dijon-vu",
+      "type": "wrap",
+      "name_en": "Dijon Vu - Wrap",
+      "name_vn": null,
+      "kcal": 530,
+      "diet": "GF",
+      "serving": null,
+      "best_seller": false,
+      "source": "package_tcd"
+    },
+    {
+      "key": "wrap:fennel-fling",
+      "type": "wrap",
+      "name_en": "Fennel Fling - Wrap",
+      "name_vn": null,
+      "kcal": 449,
+      "diet": "DF",
+      "serving": null,
+      "best_seller": false,
+      "source": "package_tcd"
+    },
+    {
+      "key": "wrap:festo",
+      "type": "wrap",
+      "name_en": "Festo - Wrap",
+      "name_vn": null,
+      "kcal": 437,
+      "diet": null,
+      "serving": null,
+      "best_seller": false,
+      "source": "package_tcd"
+    },
+    {
+      "key": "wrap:kale-my-ex-please",
+      "type": "wrap",
+      "name_en": "Kale My Ex, Please! - Wrap",
+      "name_vn": null,
+      "kcal": 461,
+      "diet": null,
+      "serving": null,
+      "best_seller": false,
+      "source": "package_tcd"
+    },
+    {
+      "key": "wrap:mi-so-cool",
+      "type": "wrap",
+      "name_en": "Mi-So-Cool - Wrap",
+      "name_vn": null,
+      "kcal": 575,
+      "diet": null,
+      "serving": null,
+      "best_seller": false,
+      "source": "package_tcd"
+    },
+    {
+      "key": "wrap:shroomami",
+      "type": "wrap",
+      "name_en": "Shroomami - Wrap",
+      "name_vn": "Shroomami - Wrap",
+      "kcal": 443,
+      "diet": "V, DF",
+      "serving": null,
+      "best_seller": false,
+      "source": "package_tcd"
+    },
+    {
+      "key": "wrap:thai-me-up",
+      "type": "wrap",
+      "name_en": "Thai Me Up - Wrap",
+      "name_vn": null,
+      "kcal": 488,
+      "diet": "GF, DF",
+      "serving": null,
+      "best_seller": false,
+      "source": "package_tcd"
+    }
+  ]
+}

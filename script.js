@@ -142,4 +142,54 @@
       if (e.key === 'Escape') popup.hidden = true;
     });
   }
+
+  /* ============================================================
+     7. Nutrition sync — pull published kcal from /nutrition.json
+     Source of truth = Supabase items.published_kcal (view
+     v_menu_published) -> nutrition.json via `nutrition sync`.
+     Progressive enhancement: overrides the hardcoded kcal text on
+     each .menu-item; if the fetch fails, the hardcoded values stay.
+     Matches by dish name (EN then VI), so no per-item markup needed.
+     ============================================================ */
+  (function () {
+    function slugBase(s) {
+      return (s || '')
+        .normalize('NFD').replace(/[̀-ͯ]/g, '')
+        .replace(/đ/g, 'd').replace(/Đ/g, 'D')
+        .toLowerCase()
+        .replace(/\s*-\s*wrap\s*$/, '')
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '');
+    }
+    fetch('/nutrition.json', { cache: 'no-store' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (doc) {
+        if (!doc || !doc.items) return;
+        var map = {};
+        doc.items.forEach(function (it) {
+          var v = { kcal: it.kcal, diet: it.diet };
+          if (it.name_en) map[slugBase(it.name_en)] = v;
+          if (it.name_vn) map[slugBase(it.name_vn)] = v;
+        });
+        document.querySelectorAll('.menu-item').forEach(function (card) {
+          var nameEl = card.querySelector('.menu-item__name');
+          var metaEl = card.querySelector('.menu-item__meta');
+          if (!nameEl || !metaEl) return;
+          var en = nameEl.querySelector('[lang="en"]');
+          var vi = nameEl.querySelector('[lang="vi"]');
+          var cands = [];
+          if (en) cands.push(en.textContent);
+          if (vi) cands.push(vi.textContent);
+          cands.push(nameEl.textContent);
+          var hit = null;
+          for (var k = 0; k < cands.length; k++) {
+            var s = slugBase(cands[k]);
+            if (map[s]) { hit = map[s]; break; }
+          }
+          if (!hit || hit.kcal == null) return;
+          metaEl.textContent = hit.kcal + ' Kcal' + (hit.diet ? ' | ' + hit.diet : '');
+        });
+      })
+      .catch(function () { /* keep hardcoded fallback */ });
+  })();
 })();
