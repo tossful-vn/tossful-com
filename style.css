@@ -854,7 +854,7 @@ html[lang="en"] [lang="vi"] { display: none !important; }
 /* Job list rows */
 .jobs-list { max-width: 980px; margin: 0 auto; }
 .job-row {
-  display: grid; grid-template-columns: 2fr 1fr 1fr auto;
+  display: grid; grid-template-columns: 2fr 1fr auto;
   gap: 20px; align-items: center;
   padding: 22px 0; border-bottom: 1px solid rgba(15,86,61,0.12);
 }
