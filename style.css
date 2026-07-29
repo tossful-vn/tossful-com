@@ -27,7 +27,11 @@
 *, *::before, *::after { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 body {
-  background: var(--bg); color: var(--ink);
+  background-color: var(--bg); color: var(--ink);
+  background-image: url("images/textures/paper-texture.webp");
+  background-repeat: repeat;
+  background-size: 600px 600px;
+  background-blend-mode: multiply;
   font-family: var(--font-body); font-size: 17px; line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -309,10 +313,14 @@ html[lang="en"] [lang="vi"] { display: none !important; }
 
 /* SAUCE MANDALA */
 .sauces {
-  background: var(--toss-cabbage); position: relative;
+  background-color: var(--toss-cabbage); position: relative;
   background-image:
+    url("images/textures/paper-texture.webp"),
     radial-gradient(circle at 25% 35%, rgba(0,0,0,0.025) 0, transparent 40%),
     radial-gradient(circle at 70% 65%, rgba(0,0,0,0.025) 0, transparent 40%);
+  background-repeat: repeat, no-repeat, no-repeat;
+  background-size: 600px 600px, auto, auto;
+  background-blend-mode: multiply, normal, normal;
 }
 .sauce-mandala { position: relative; max-width: 980px; margin: 0 auto; aspect-ratio: 1.4/1; }
 .sauce-mandala__center {
