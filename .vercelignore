@@ -1,0 +1,5 @@
+# Không đưa lên deployment Vercel (vẫn nằm trong git).
+# CLAUDE.md là tài liệu quy trình nội bộ — repo này là static hosting,
+# Vercel serve mọi file tĩnh (VD /nutrition.json là public), nên nếu không
+# ignore thì CLAUDE.md sẽ truy cập được ở https://tossful.com/CLAUDE.md.
+CLAUDE.md
