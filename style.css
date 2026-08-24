@@ -392,8 +392,12 @@ html[lang="en"] [lang="vi"] { display: none !important; }
 @media (max-width: 900px) {
   /* Collapse browse + utility links into the hamburger drawer; logo stays centered. */
   .site-browse { display: none; }
-  .site-header__right .is-highlight,
-  .site-header__right .btn-pink { display: none; }
+  .site-header__right .is-highlight { display: none; }
+  /* 2026-08-24 fix: the "Dat hang" CTA is the primary action on the site and
+     must stay visible in the header on mobile, not hidden behind the burger.
+     It is only made compact so logo + CTA + VI + burger still fit one row. */
+  .site-header__right { gap: 10px; }
+  .site-header__right .btn-pink { padding: 10px 18px; font-size: 13px; }
   .menu-toggle { display: inline-flex; }
   .site-nav {
     position: absolute; top: 100%; left: 0; right: 0;
@@ -403,6 +407,16 @@ html[lang="en"] [lang="vi"] { display: none !important; }
   }
   .site-nav.is-open { display: flex; }
   .site-header__inner { position: relative; }
+}
+
+/* Narrow phones (<=420px): trim the header row so the CTA never wraps. */
+@media (max-width: 420px) {
+  .site-header__inner { gap: 10px; padding-left: 16px; padding-right: 16px; }
+  .site-header__logo img { height: 32px; }
+  .site-header__right { gap: 8px; }
+  .site-header__right .btn-pink { padding: 9px 14px; font-size: 12px; }
+  .lang-switch { padding: 7px 9px; font-size: 11px; gap: 4px; }
+  .menu-toggle { padding: 6px; font-size: 20px; }
 }
 
 /* =========================================================================
@@ -936,6 +950,9 @@ html[lang="en"] [lang="vi"] { display: none !important; }
   position: relative; max-width: min(720px, 92vw); margin: 0 16px;
   border-radius: var(--radius); overflow: hidden;
   box-shadow: 0 24px 80px rgba(0,0,0,0.35);
+  /* 2026-08-24: opaque so the dialog is never a transparent hole over a
+     dimmed page while the promo image is still decoding. */
+  background: var(--toss-white);
 }
 .popup__dialog img { width: 100%; height: auto; display: block; }
 .popup__close {

@@ -130,10 +130,29 @@
     var seen = false;
     try { seen = sessionStorage.getItem(KEY) === '1'; } catch (e) {}
     if (!seen) {
-      setTimeout(function () {
+      /* 2026-08-24: the popup used to open on a bare 1200ms timer, so on a
+         slow phone connection it appeared as a dimmed page with a floating
+         close button and no poster. Only open it once the image has really
+         decoded; if it errors or is still not ready after 8s, skip the popup
+         for this visit (and leave KEY unset so it can show next time). */
+      var promo = popup.querySelector('img');
+      var opened = false;
+      var open = function () {
+        if (opened) return;
+        opened = true;
         popup.hidden = false;
         try { sessionStorage.setItem(KEY, '1'); } catch (e) {}
-      }, 1200);
+      };
+      var ready = function () { setTimeout(open, 1200); };
+      if (!promo) {
+        ready();
+      } else if (promo.complete && promo.naturalWidth > 0) {
+        ready();
+      } else {
+        var give_up = setTimeout(function () { opened = true; }, 8000);
+        promo.addEventListener('load', function () { clearTimeout(give_up); ready(); });
+        promo.addEventListener('error', function () { clearTimeout(give_up); opened = true; });
+      }
     }
     popup.querySelectorAll('[data-popup-close]').forEach(function (el) {
       el.addEventListener('click', function () { popup.hidden = true; });
