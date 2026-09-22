@@ -6,6 +6,7 @@
     { "source": "/cau-chuyen", "destination": "/about", "permanent": true },
     { "source": "/feedbacks", "destination": "/news", "permanent": true },
     { "source": "/tin-tuc", "destination": "/news", "permanent": true },
-    { "source": "/tuyen-dung", "destination": "/careers", "permanent": true }
+    { "source": "/tuyen-dung", "destination": "/careers", "permanent": true },
+    { "source": "/macro", "destination": "https://my.tossful.com/nutrition", "permanent": false }
   ]
 }
