@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "Supabase Tossful · v_menu_published",
-    "generated": "2026-07-21",
+    "generated": "2026-11-09",
     "note": "Published per-serving kcal. Master = Supabase items.published_kcal. Do not edit by hand — run `nutrition sync`."
   },
   "items": [
@@ -10,88 +10,88 @@
       "type": "bowl",
       "name_en": "Biết Điều",
       "name_vn": null,
-      "kcal": 488,
+      "kcal": 397,
       "diet": "GF, DF",
       "serving": null,
       "best_seller": true,
-      "source": "package_tcd"
+      "source": "recipe_calc"
     },
     {
       "key": "bowl:dijon-vu",
       "type": "bowl",
       "name_en": "Dijon Vu",
       "name_vn": null,
-      "kcal": 530,
+      "kcal": 542,
       "diet": "GF",
       "serving": null,
       "best_seller": false,
-      "source": "package_tcd"
+      "source": "recipe_calc"
     },
     {
       "key": "bowl:fennel-fling",
       "type": "bowl",
       "name_en": "Fennel Fling",
       "name_vn": null,
-      "kcal": 449,
+      "kcal": 450,
       "diet": "DF",
       "serving": null,
       "best_seller": true,
-      "source": "package_tcd"
+      "source": "recipe_calc"
     },
     {
       "key": "bowl:festo",
       "type": "bowl",
       "name_en": "Festo",
       "name_vn": null,
-      "kcal": 437,
+      "kcal": 453,
       "diet": null,
       "serving": null,
       "best_seller": false,
-      "source": "package_tcd"
+      "source": "recipe_calc"
     },
     {
       "key": "bowl:kale-my-ex-please",
       "type": "bowl",
       "name_en": "Kale My Ex, Please!",
       "name_vn": null,
-      "kcal": 461,
+      "kcal": 475,
       "diet": null,
       "serving": null,
       "best_seller": false,
-      "source": "package_tcd"
+      "source": "recipe_calc"
     },
     {
       "key": "bowl:mi-so-cool",
       "type": "bowl",
       "name_en": "Mi-So-Cool",
       "name_vn": null,
-      "kcal": 575,
+      "kcal": 586,
       "diet": null,
       "serving": null,
       "best_seller": true,
-      "source": "package_tcd"
+      "source": "recipe_calc"
     },
     {
       "key": "bowl:shroomami",
       "type": "bowl",
       "name_en": "Shroomami",
       "name_vn": "Shroomami",
-      "kcal": 443,
+      "kcal": 479,
       "diet": "V, DF",
       "serving": null,
       "best_seller": false,
-      "source": "package_tcd"
+      "source": "recipe_calc"
     },
     {
       "key": "bowl:thai-me-up",
       "type": "bowl",
       "name_en": "Thai Me Up",
       "name_vn": null,
-      "kcal": 488,
+      "kcal": 511,
       "diet": "GF, DF",
       "serving": null,
       "best_seller": false,
-      "source": "package_tcd"
+      "source": "recipe_calc"
     },
     {
       "key": "drink:cold-pressed-guava",
@@ -164,88 +164,88 @@
       "type": "wrap",
       "name_en": "Biết Điều - Wrap",
       "name_vn": null,
-      "kcal": 488,
+      "kcal": 450,
       "diet": "GF, DF",
       "serving": null,
       "best_seller": false,
-      "source": "package_tcd"
+      "source": "recipe_calc"
     },
     {
       "key": "wrap:dijon-vu",
       "type": "wrap",
       "name_en": "Dijon Vu - Wrap",
       "name_vn": null,
-      "kcal": 530,
+      "kcal": 560,
       "diet": "GF",
       "serving": null,
       "best_seller": false,
-      "source": "package_tcd"
+      "source": "recipe_calc"
     },
     {
       "key": "wrap:fennel-fling",
       "type": "wrap",
       "name_en": "Fennel Fling - Wrap",
       "name_vn": null,
-      "kcal": 449,
+      "kcal": 455,
       "diet": "DF",
       "serving": null,
       "best_seller": false,
-      "source": "package_tcd"
+      "source": "recipe_calc"
     },
     {
       "key": "wrap:festo",
       "type": "wrap",
       "name_en": "Festo - Wrap",
       "name_vn": null,
-      "kcal": 437,
+      "kcal": 485,
       "diet": null,
       "serving": null,
       "best_seller": false,
-      "source": "package_tcd"
+      "source": "recipe_calc"
     },
     {
       "key": "wrap:kale-my-ex-please",
       "type": "wrap",
       "name_en": "Kale My Ex, Please! - Wrap",
       "name_vn": null,
-      "kcal": 461,
+      "kcal": 512,
       "diet": null,
       "serving": null,
       "best_seller": false,
-      "source": "package_tcd"
+      "source": "recipe_calc"
     },
     {
       "key": "wrap:mi-so-cool",
       "type": "wrap",
       "name_en": "Mi-So-Cool - Wrap",
       "name_vn": null,
-      "kcal": 575,
+      "kcal": 584,
       "diet": null,
       "serving": null,
       "best_seller": false,
-      "source": "package_tcd"
+      "source": "recipe_calc"
     },
     {
       "key": "wrap:shroomami",
       "type": "wrap",
       "name_en": "Shroomami - Wrap",
       "name_vn": "Shroomami - Wrap",
-      "kcal": 443,
+      "kcal": 513,
       "diet": "V, DF",
       "serving": null,
       "best_seller": false,
-      "source": "package_tcd"
+      "source": "recipe_calc"
     },
     {
       "key": "wrap:thai-me-up",
       "type": "wrap",
       "name_en": "Thai Me Up - Wrap",
       "name_vn": null,
-      "kcal": 488,
+      "kcal": 520,
       "diet": "GF, DF",
       "serving": null,
       "best_seller": false,
-      "source": "package_tcd"
+      "source": "recipe_calc"
     }
   ]
 }

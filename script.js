@@ -184,9 +184,12 @@
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (doc) {
         if (!doc || !doc.items) return;
-        var map = {};
+        // Bowl and wrap share a name once "- Wrap" is stripped, so keep one
+        // map per type; a card in the wrap tab reads the wrap's own number.
+        var maps = { wrap: {}, other: {} };
         doc.items.forEach(function (it) {
           var v = { kcal: it.kcal, diet: it.diet };
+          var map = it.type === 'wrap' ? maps.wrap : maps.other;
           if (it.name_en) map[slugBase(it.name_en)] = v;
           if (it.name_vn) map[slugBase(it.name_vn)] = v;
         });
@@ -196,6 +199,8 @@
           if (!nameEl || !metaEl) return;
           var en = nameEl.querySelector('[lang="en"]');
           var vi = nameEl.querySelector('[lang="vi"]');
+          var inWrap = !!card.closest('[data-tab-panel="wrap"]');
+          var map = inWrap ? maps.wrap : maps.other;
           var cands = [];
           if (en) cands.push(en.textContent);
           if (vi) cands.push(vi.textContent);
